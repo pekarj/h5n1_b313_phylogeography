@@ -1,0 +1,1945 @@
+<?xml version='1.0' encoding='latin1'?>
+<beast version="10.x.x">
+	
+
+	
+	
+	<taxa id="taxa">
+		<taxon id="SRR28752583">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752582">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752581">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752580">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752579">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752578">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="loc">
+				ID_CASSIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752475">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_KEARNY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752567">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752566">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752565">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752564">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752562">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752561">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752560">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752559">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752558">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752557">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752556">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_GRAY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752472">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_MONTCALM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752469">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_MONTCALM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752467">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_MONTCALM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752466">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_MONTCALM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752465">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_MONTCALM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752679">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752678">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752674">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752673">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752672">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752637">
+			<date value="2024.2568306010928" direction="forwards" units="years" />
+			<attr name="loc">
+				NC_WAKE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752506">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752505">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752504">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752503">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752502">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752501">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752500">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752499">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752497">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				OH_WOOD
+			</attr>
+		</taxon>
+		<taxon id="SRR28752621">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752620">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752619">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752618">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752617">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752552">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752551">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752550">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752548">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752547">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752546">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752545">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752544">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752543">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752542">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752541">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752540">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752539">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752537">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="loc">
+				SD_BROWN
+			</attr>
+		</taxon>
+		<taxon id="SRR28752498">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752487">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752647">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752635">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752624">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752538">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752526">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752525">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752463">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752462">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752461">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752460">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752459">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752458">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752456">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752455">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_LAMB
+			</attr>
+		</taxon>
+		<taxon id="SRR28752614">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752613">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752612">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752611">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752610">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752609">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752608">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752607">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752605">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752604">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752603">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752602">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752601">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752600">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752599">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752598">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752596">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752594">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752593">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752592">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752591">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752590">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752589">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752588">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752587">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752586">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752585">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752519">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752518">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752517">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752516">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752515">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752514">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752670">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752669">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752668">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752667">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752584">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752584">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752662">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752661">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752659">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752658">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752657">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752656">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752655">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752654">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752653">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752652">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752651">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752650">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752584">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752493">
+			<date value="2024.188524590164" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752492">
+			<date value="2024.188524590164" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752491">
+			<date value="2024.188524590164" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752490">
+			<date value="2024.188524590164" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_CASTRO
+			</attr>
+		</taxon>
+		<taxon id="SRR28752553">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_IONIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752508">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_IONIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752507">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="loc">
+				MI_IONIA
+			</attr>
+		</taxon>
+		<taxon id="SRR28752457">
+			<date value="2024.1803278688524" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_MOORE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752496">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_PARMER
+			</attr>
+		</taxon>
+		<taxon id="SRR28752495">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_PARMER
+			</attr>
+		</taxon>
+		<taxon id="SRR28752606">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752595">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752520">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752682">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752671">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752660">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DEAF_SMITH
+			</attr>
+		</taxon>
+		<taxon id="SRR28752524">
+			<date value="2024.22131147541" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752523">
+			<date value="2024.22131147541" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HARTLEY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752474">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752473">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_DALLAM
+			</attr>
+		</taxon>
+		<taxon id="SRR28752521">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28834855">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="loc">
+				TX_HALE
+			</attr>
+		</taxon>
+		<taxon id="SRR28752568">
+			<date value="2024.224043715847" direction="forwards" units="years" />
+			<attr name="loc">
+				NM_CURRY
+			</attr>
+		</taxon>
+		<taxon id="SRR28752477">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="loc">
+				KS_SEWARD
+			</attr>
+		</taxon>
+	</taxa>
+	
+	
+
+	
+	
+	<alignment id="alignment" dataType="nucleotide">
+		<sequence>
+			<taxon idref="SRR28752583" />
+			<!-- Genome sequence for accession SRR28752583 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752582" />
+			<!-- Genome sequence for accession SRR28752582 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752581" />
+			<!-- Genome sequence for accession SRR28752581 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752580" />
+			<!-- Genome sequence for accession SRR28752580 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752579" />
+			<!-- Genome sequence for accession SRR28752579 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752578" />
+			<!-- Genome sequence for accession SRR28752578 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752475" />
+			<!-- Genome sequence for accession SRR28752475 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752567" />
+			<!-- Genome sequence for accession SRR28752567 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752566" />
+			<!-- Genome sequence for accession SRR28752566 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752565" />
+			<!-- Genome sequence for accession SRR28752565 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752564" />
+			<!-- Genome sequence for accession SRR28752564 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752562" />
+			<!-- Genome sequence for accession SRR28752562 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752561" />
+			<!-- Genome sequence for accession SRR28752561 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752560" />
+			<!-- Genome sequence for accession SRR28752560 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752559" />
+			<!-- Genome sequence for accession SRR28752559 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752558" />
+			<!-- Genome sequence for accession SRR28752558 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752557" />
+			<!-- Genome sequence for accession SRR28752557 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752556" />
+			<!-- Genome sequence for accession SRR28752556 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752472" />
+			<!-- Genome sequence for accession SRR28752472 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752469" />
+			<!-- Genome sequence for accession SRR28752469 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752467" />
+			<!-- Genome sequence for accession SRR28752467 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752466" />
+			<!-- Genome sequence for accession SRR28752466 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752465" />
+			<!-- Genome sequence for accession SRR28752465 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752679" />
+			<!-- Genome sequence for accession SRR28752679 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752678" />
+			<!-- Genome sequence for accession SRR28752678 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752674" />
+			<!-- Genome sequence for accession SRR28752674 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752673" />
+			<!-- Genome sequence for accession SRR28752673 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752672" />
+			<!-- Genome sequence for accession SRR28752672 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752637" />
+			<!-- Genome sequence for accession SRR28752637 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752506" />
+			<!-- Genome sequence for accession SRR28752506 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752505" />
+			<!-- Genome sequence for accession SRR28752505 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752504" />
+			<!-- Genome sequence for accession SRR28752504 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752503" />
+			<!-- Genome sequence for accession SRR28752503 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752502" />
+			<!-- Genome sequence for accession SRR28752502 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752501" />
+			<!-- Genome sequence for accession SRR28752501 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752500" />
+			<!-- Genome sequence for accession SRR28752500 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752499" />
+			<!-- Genome sequence for accession SRR28752499 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752497" />
+			<!-- Genome sequence for accession SRR28752497 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752621" />
+			<!-- Genome sequence for accession SRR28752621 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752620" />
+			<!-- Genome sequence for accession SRR28752620 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752619" />
+			<!-- Genome sequence for accession SRR28752619 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752618" />
+			<!-- Genome sequence for accession SRR28752618 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752617" />
+			<!-- Genome sequence for accession SRR28752617 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752552" />
+			<!-- Genome sequence for accession SRR28752552 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752551" />
+			<!-- Genome sequence for accession SRR28752551 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752550" />
+			<!-- Genome sequence for accession SRR28752550 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752548" />
+			<!-- Genome sequence for accession SRR28752548 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752547" />
+			<!-- Genome sequence for accession SRR28752547 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752546" />
+			<!-- Genome sequence for accession SRR28752546 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752545" />
+			<!-- Genome sequence for accession SRR28752545 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752544" />
+			<!-- Genome sequence for accession SRR28752544 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752543" />
+			<!-- Genome sequence for accession SRR28752543 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752542" />
+			<!-- Genome sequence for accession SRR28752542 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752541" />
+			<!-- Genome sequence for accession SRR28752541 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752540" />
+			<!-- Genome sequence for accession SRR28752540 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752539" />
+			<!-- Genome sequence for accession SRR28752539 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752537" />
+			<!-- Genome sequence for accession SRR28752537 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752498" />
+			<!-- Genome sequence for accession SRR28752498 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752487" />
+			<!-- Genome sequence for accession SRR28752487 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752647" />
+			<!-- Genome sequence for accession SRR28752647 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752635" />
+			<!-- Genome sequence for accession SRR28752635 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752624" />
+			<!-- Genome sequence for accession SRR28752624 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752538" />
+			<!-- Genome sequence for accession SRR28752538 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752526" />
+			<!-- Genome sequence for accession SRR28752526 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752525" />
+			<!-- Genome sequence for accession SRR28752525 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752463" />
+			<!-- Genome sequence for accession SRR28752463 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752462" />
+			<!-- Genome sequence for accession SRR28752462 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752461" />
+			<!-- Genome sequence for accession SRR28752461 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752460" />
+			<!-- Genome sequence for accession SRR28752460 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752459" />
+			<!-- Genome sequence for accession SRR28752459 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752458" />
+			<!-- Genome sequence for accession SRR28752458 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752456" />
+			<!-- Genome sequence for accession SRR28752456 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752455" />
+			<!-- Genome sequence for accession SRR28752455 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752614" />
+			<!-- Genome sequence for accession SRR28752614 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752613" />
+			<!-- Genome sequence for accession SRR28752613 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752612" />
+			<!-- Genome sequence for accession SRR28752612 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752611" />
+			<!-- Genome sequence for accession SRR28752611 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752610" />
+			<!-- Genome sequence for accession SRR28752610 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752609" />
+			<!-- Genome sequence for accession SRR28752609 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752608" />
+			<!-- Genome sequence for accession SRR28752608 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752607" />
+			<!-- Genome sequence for accession SRR28752607 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752605" />
+			<!-- Genome sequence for accession SRR28752605 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752604" />
+			<!-- Genome sequence for accession SRR28752604 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752603" />
+			<!-- Genome sequence for accession SRR28752603 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752602" />
+			<!-- Genome sequence for accession SRR28752602 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752601" />
+			<!-- Genome sequence for accession SRR28752601 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752600" />
+			<!-- Genome sequence for accession SRR28752600 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752599" />
+			<!-- Genome sequence for accession SRR28752599 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752598" />
+			<!-- Genome sequence for accession SRR28752598 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752596" />
+			<!-- Genome sequence for accession SRR28752596 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752594" />
+			<!-- Genome sequence for accession SRR28752594 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752593" />
+			<!-- Genome sequence for accession SRR28752593 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752592" />
+			<!-- Genome sequence for accession SRR28752592 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752591" />
+			<!-- Genome sequence for accession SRR28752591 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752590" />
+			<!-- Genome sequence for accession SRR28752590 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752589" />
+			<!-- Genome sequence for accession SRR28752589 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752588" />
+			<!-- Genome sequence for accession SRR28752588 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752587" />
+			<!-- Genome sequence for accession SRR28752587 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752586" />
+			<!-- Genome sequence for accession SRR28752586 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752585" />
+			<!-- Genome sequence for accession SRR28752585 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752519" />
+			<!-- Genome sequence for accession SRR28752519 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752518" />
+			<!-- Genome sequence for accession SRR28752518 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752517" />
+			<!-- Genome sequence for accession SRR28752517 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752516" />
+			<!-- Genome sequence for accession SRR28752516 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752515" />
+			<!-- Genome sequence for accession SRR28752515 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752514" />
+			<!-- Genome sequence for accession SRR28752514 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752670" />
+			<!-- Genome sequence for accession SRR28752670 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752669" />
+			<!-- Genome sequence for accession SRR28752669 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752668" />
+			<!-- Genome sequence for accession SRR28752668 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752667" />
+			<!-- Genome sequence for accession SRR28752667 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752584" />
+			<!-- Genome sequence for accession SRR28752584 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752584" />
+			<!-- Genome sequence for accession SRR28752584 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752662" />
+			<!-- Genome sequence for accession SRR28752662 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752661" />
+			<!-- Genome sequence for accession SRR28752661 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752659" />
+			<!-- Genome sequence for accession SRR28752659 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752658" />
+			<!-- Genome sequence for accession SRR28752658 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752657" />
+			<!-- Genome sequence for accession SRR28752657 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752656" />
+			<!-- Genome sequence for accession SRR28752656 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752655" />
+			<!-- Genome sequence for accession SRR28752655 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752654" />
+			<!-- Genome sequence for accession SRR28752654 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752653" />
+			<!-- Genome sequence for accession SRR28752653 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752652" />
+			<!-- Genome sequence for accession SRR28752652 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752651" />
+			<!-- Genome sequence for accession SRR28752651 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752650" />
+			<!-- Genome sequence for accession SRR28752650 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752584" />
+			<!-- Genome sequence for accession SRR28752584 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752493" />
+			<!-- Genome sequence for accession SRR28752493 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752492" />
+			<!-- Genome sequence for accession SRR28752492 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752491" />
+			<!-- Genome sequence for accession SRR28752491 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752490" />
+			<!-- Genome sequence for accession SRR28752490 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752553" />
+			<!-- Genome sequence for accession SRR28752553 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752508" />
+			<!-- Genome sequence for accession SRR28752508 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752507" />
+			<!-- Genome sequence for accession SRR28752507 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752457" />
+			<!-- Genome sequence for accession SRR28752457 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752496" />
+			<!-- Genome sequence for accession SRR28752496 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752495" />
+			<!-- Genome sequence for accession SRR28752495 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752606" />
+			<!-- Genome sequence for accession SRR28752606 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752595" />
+			<!-- Genome sequence for accession SRR28752595 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752520" />
+			<!-- Genome sequence for accession SRR28752520 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752682" />
+			<!-- Genome sequence for accession SRR28752682 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752671" />
+			<!-- Genome sequence for accession SRR28752671 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752660" />
+			<!-- Genome sequence for accession SRR28752660 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752524" />
+			<!-- Genome sequence for accession SRR28752524 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752523" />
+			<!-- Genome sequence for accession SRR28752523 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752474" />
+			<!-- Genome sequence for accession SRR28752474 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752473" />
+			<!-- Genome sequence for accession SRR28752473 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752521" />
+			<!-- Genome sequence for accession SRR28752521 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28834855" />
+			<!-- Genome sequence for accession SRR28834855 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752568" />
+			<!-- Genome sequence for accession SRR28752568 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752477" />
+			<!-- Genome sequence for accession SRR28752477 -->
+			</sequence>
+	</alignment>
+	
+	
+
+	
+	
+	<patterns id="patterns" from="1" strip="false">
+		<alignment idref="alignment" />
+	</patterns>
+	
+
+	
+	<generalDataType id="loc.dataType">
+
+		
+		<state code="ID_CASSIA" />
+		<state code="KS_GRAY" />
+		<state code="KS_KEARNY" />
+		<state code="KS_SEWARD" />
+		<state code="MI_IONIA" />
+		<state code="MI_MONTCALM" />
+		<state code="NC_WAKE" />
+		<state code="NM_CURRY" />
+		<state code="OH_WOOD" />
+		<state code="SD_BROWN" />
+		<state code="TX_CASTRO" />
+		<state code="TX_DALLAM" />
+		<state code="TX_DEAF_SMITH" />
+		<state code="TX_HALE" />
+		<state code="TX_HARTLEY" />
+		<state code="TX_LAMB" />
+		<state code="TX_MOORE" />
+		<state code="TX_PARMER" />
+	</generalDataType>
+
+
+	
+	<attributePatterns id="loc.pattern" attribute="loc">
+		<taxa idref="taxa" />
+		<generalDataType idref="loc.dataType" />
+	</attributePatterns>
+
+
+	
+	
+	<exponentialGrowth id="exponential" units="years">
+		<populationSize>
+			<parameter id="exponential.popSize" value="1.0" lower="0.0" />
+		</populationSize>
+		<growthRate>
+			<parameter id="exponential.growthRate" value="0.0" />
+		</growthRate>
+	</exponentialGrowth>
+
+	
+	<doublingTime id="doublingTime" timeUnits="days">
+		<growthRate timeUnits="years">
+			<parameter idref="exponential.growthRate" />
+		</growthRate>
+	</doublingTime>
+	
+
+	
+	<coalescentSimulator id="startingTree">
+		<taxa idref="taxa" />
+		<exponentialGrowth idref="exponential" />
+	</coalescentSimulator>
+	
+
+	
+	<treeModel id="treeModel">
+		<coalescentTree idref="startingTree" />
+		<rootHeight>
+			<parameter id="treeModel.rootHeight" />
+		</rootHeight>
+		<nodeHeights internalNodes="true">
+			<parameter id="treeModel.internalNodeHeights" />
+		</nodeHeights>
+		<nodeHeights internalNodes="true" rootNode="true">
+			<parameter id="treeModel.allInternalNodeHeights" />
+		</nodeHeights>
+	</treeModel>
+
+	
+	<treeHeightStatistic id="rootHeight">
+		<treeModel idref="treeModel" />
+	</treeHeightStatistic>
+
+	
+	<treeLengthStatistic id="treeLength">
+		<treeModel idref="treeModel" />
+	</treeLengthStatistic>
+
+	
+	<tmrcaStatistic id="age(root)" absolute="true">
+		<treeModel idref="treeModel" />
+	</tmrcaStatistic>
+	
+
+	
+	<coalescentLikelihood id="coalescent">
+		<model>
+			<exponentialGrowth idref="exponential" />
+		</model>
+		<intervals>
+			<treeIntervals>
+				<treeModel idref="treeModel" />
+			</treeIntervals>
+		</intervals>
+	</coalescentLikelihood>
+	
+
+	
+	<strictClockBranchRates id="default.branchRates">
+		<rate>
+			<parameter id="default.clock.rate" value="0.001" lower="0.0" />
+		</rate>
+	</strictClockBranchRates>
+	
+	<rateStatistic id="default.meanRate" name="default.meanRate" mode="mean" internal="true" external="true">
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="default.branchRates" />
+	</rateStatistic>
+	
+
+	
+	<strictClockBranchRates id="loc.branchRates">
+		<rate>
+			<parameter id="loc.clock.rate" value="0.001" lower="0.0" />
+		</rate>
+	</strictClockBranchRates>
+	
+	<rateStatistic id="loc.meanRate" name="loc.meanRate" mode="mean" internal="true" external="true">
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="loc.branchRates" />
+	</rateStatistic>
+	
+
+	
+	<gtrModel id="gtr">
+		<frequencies>
+			<frequencyModel dataType="nucleotide">
+				<frequencies>
+					<parameter id="frequencies" value="0.25 0.25 0.25 0.25" />
+				</frequencies>
+			</frequencyModel>
+		</frequencies>
+		<rates>
+			<parameter id="gtr.rates" dimension="6" value="1.0" lower="0.0" />
+		</rates>
+	</gtrModel>
+
+	
+	<siteModel id="siteModel">
+		<substitutionModel>
+			<gtrModel idref="gtr" />
+		</substitutionModel>
+		<gammaShape gammaCategories="4" discretization="equal">
+			<parameter id="alpha" value="0.5" lower="0.0" />
+		</gammaShape>
+	</siteModel>
+
+	
+	<statistic id="mu" name="mu">
+		<siteModel idref="siteModel" />
+	</statistic>
+	
+	
+
+	
+	<treeDataLikelihood id="default.treeLikelihood" useAmbiguities="false" usePreOrder="false">
+		<partition>
+			<patterns idref="patterns" />
+			<siteModel idref="siteModel" />
+		</partition>
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="default.branchRates" />
+	</treeDataLikelihood>
+	
+
+	
+	<generalSubstitutionModel id="loc.model" randomizeIndicator="false">
+		<generalDataType idref="loc.dataType" />
+		<frequencies>
+			<frequencyModel id="loc.frequencyModel" normalize="true">
+				<generalDataType idref="loc.dataType" />
+				<frequencies>
+					<parameter id="loc.frequencies" dimension="18" />
+				</frequencies>
+			</frequencyModel>
+		</frequencies>
+
+		
+		<rates>
+			<parameter id="loc.rates" dimension="306" value="1.0" lower="0.0" />
+		</rates>
+		<rateIndicator>
+			<parameter id="loc.indicators" dimension="306" value="1.0" />
+		</rateIndicator>
+	</generalSubstitutionModel>
+	<sumStatistic id="loc.nonZeroRates" elementwise="true">
+		<parameter idref="loc.indicators" />
+	</sumStatistic>
+	<productStatistic id="loc.actualRates" elementwise="false">
+		<parameter idref="loc.indicators" />
+		<parameter idref="loc.rates" />
+	</productStatistic>
+	<siteModel id="loc.siteModel">
+		<substitutionModel>
+			<generalSubstitutionModel idref="loc.model" />
+		</substitutionModel>
+	</siteModel>
+
+	
+	<ancestralTreeLikelihood id="loc.treeLikelihood" stateTagName="loc.states" useUniformization="true" saveCompleteHistory="false" logCompleteHistory="false">
+		<attributePatterns idref="loc.pattern" />
+		<treeModel idref="treeModel" />
+		<siteModel idref="loc.siteModel" />
+		<generalSubstitutionModel idref="loc.model" />
+		<generalSubstitutionModel idref="loc.model" />
+		<strictClockBranchRates idref="loc.branchRates" />
+
+		
+		<frequencyModel id="loc.root.frequencyModel" normalize="true">
+			<generalDataType idref="loc.dataType" />
+			<frequencies>
+				<parameter id="loc.root.frequencies" dimension="18" />
+			</frequencies>
+		</frequencyModel>
+	</ancestralTreeLikelihood>
+
+
+	
+	<operators id="operators" optimizationSchedule="log">
+		<deltaExchange delta="0.01" weight="1">
+			<parameter idref="gtr.rates" />
+		</deltaExchange>
+		<deltaExchange delta="0.01" weight="1">
+			<parameter idref="frequencies" />
+		</deltaExchange>
+		<scaleOperator scaleFactor="0.75" weight="1">
+			<parameter idref="alpha" />
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="default.clock.rate" />
+		</scaleOperator>
+		<upDownOperator scaleFactor="0.75" weight="3">
+			<up>
+				<parameter idref="treeModel.allInternalNodeHeights" />
+			</up>
+			<down>
+				<parameter idref="default.clock.rate" />
+			</down>
+		</upDownOperator>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="loc.clock.rate" />
+		</scaleOperator>
+		<upDownOperator scaleFactor="0.75" weight="3">
+			<up>
+				<parameter idref="treeModel.allInternalNodeHeights" />
+			</up>
+			<down>
+				<parameter idref="loc.clock.rate" />
+			</down>
+		</upDownOperator>
+		<subtreeLeap size="1.0" weight="149">
+			<treeModel idref="treeModel" />
+		</subtreeLeap>
+		<fixedHeightSubtreePruneRegraft weight="14.9">
+			<treeModel idref="treeModel" />
+		</fixedHeightSubtreePruneRegraft>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="exponential.popSize" />
+		</scaleOperator>
+		<randomWalkOperator windowSize="1.0" weight="3">
+			<parameter idref="exponential.growthRate" />
+		</randomWalkOperator>
+		<scaleOperator scaleFactor="0.75" weight="15" scaleAllIndependently="true">
+			<parameter idref="loc.rates" />
+		</scaleOperator>
+		<bitFlipOperator weight="7">
+			<parameter idref="loc.indicators" />
+		</bitFlipOperator>
+		<deltaExchange delta="0.75" weight="1">
+			<parameter idref="loc.root.frequencies" />
+		</deltaExchange>
+	</operators>
+	
+
+	
+	<mcmc id="mcmc" chainLength="100000000" autoOptimize="true">
+		<joint id="joint">
+			<prior id="prior">
+				<dirichletPrior alpha="1.0" sumsTo="6.0">
+					<parameter idref="gtr.rates" />
+				</dirichletPrior>
+				<dirichletPrior alpha="1.0" sumsTo="1.0">
+					<parameter idref="frequencies" />
+				</dirichletPrior>
+				<exponentialPrior mean="0.5" offset="0.0">
+					<parameter idref="alpha" />
+				</exponentialPrior>
+				
+				
+				<normalPrior mean="3.6778E-3" stdev="7.7666E-5" lower="0.0">
+					<parameter idref="default.clock.rate" />
+				</normalPrior>
+
+				<ctmcScalePrior>
+					<ctmcScale>
+						<parameter idref="loc.clock.rate" />
+					</ctmcScale>
+					<treeModel idref="treeModel" />
+				</ctmcScalePrior>
+				<gammaPrior shape="0.001" scale="1000.0" offset="0.0">
+					<parameter idref="exponential.popSize" />
+				</gammaPrior>
+				<laplacePrior mean="0.0" scale="100.0">
+					<parameter idref="exponential.growthRate" />
+				</laplacePrior>
+				<poissonPrior mean="17.0" offset="0.0">
+					<statistic idref="loc.nonZeroRates" />
+				</poissonPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="loc.frequencies" />
+				</uniformPrior>
+				<cachedPrior>
+					<gammaPrior shape="1.0" scale="1.0" offset="0.0">
+						<parameter idref="loc.rates" />
+					</gammaPrior>
+					<parameter idref="loc.rates" />
+				</cachedPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="loc.root.frequencies" />
+				</uniformPrior>
+				<coalescentLikelihood idref="coalescent" />
+				
+				
+				<strictClockBranchRates idref="default.branchRates" />
+				<strictClockBranchRates idref="loc.branchRates" />
+				<generalSubstitutionModel idref="loc.model" />
+
+			</prior>
+			<likelihood id="likelihood">
+				<treeDataLikelihood idref="default.treeLikelihood" />
+				<ancestralTreeLikelihood idref="loc.treeLikelihood" />
+
+			</likelihood>
+		</joint>
+		<operators idref="operators" />
+
+		
+		<log id="screenLog" logEvery="1000">
+			<column label="Joint" dp="4" width="12">
+				<joint idref="joint" />
+			</column>
+			<column label="Prior" dp="4" width="12">
+				<prior idref="prior" />
+			</column>
+			<column label="Likelihood" dp="4" width="12">
+				<likelihood idref="likelihood" />
+			</column>
+			<column label="age(root)" sf="6" width="12">
+				<tmrcaStatistic idref="age(root)" />
+			</column>
+			<column label="default.clock.rate" sf="6" width="12">
+				<parameter idref="default.clock.rate" />
+			</column>
+			<column label="loc.clock.rate" sf="6" width="12">
+				<parameter idref="loc.clock.rate" />
+			</column>
+			<column label="loc.nonZeroRates" dp="0" width="6">
+				<sumStatistic idref="loc.nonZeroRates" />
+			</column>
+
+		</log>
+
+		
+		<log id="fileLog" logEvery="10000" fileName="county_level_all.fasta.aln.log" overwrite="false">
+			<joint idref="joint" />
+			<prior idref="prior" />
+			<likelihood idref="likelihood" />
+			<treeHeightStatistic idref="rootHeight" />
+			<tmrcaStatistic idref="age(root)" />
+			<treeLengthStatistic idref="treeLength" />
+			<parameter idref="exponential.popSize" />
+			<parameter idref="exponential.growthRate" />
+			<parameter idref="doublingTime" />
+			<parameter idref="gtr.rates" />
+			<parameter idref="frequencies" />
+			<parameter idref="alpha" />
+			<parameter idref="default.clock.rate" />
+			<parameter idref="loc.clock.rate" />
+			<rateStatistic idref="default.meanRate" />
+			<rateStatistic idref="loc.meanRate" />
+			<parameter idref="loc.rates" />
+			<parameter idref="loc.indicators" />
+			<sumStatistic idref="loc.nonZeroRates" />
+
+			<treeDataLikelihood idref="default.treeLikelihood" />
+			<strictClockBranchRates idref="default.branchRates" />
+			<strictClockBranchRates idref="loc.branchRates" />
+			<ancestralTreeLikelihood idref="loc.treeLikelihood" />
+			<generalSubstitutionModel idref="loc.model" />
+
+			<coalescentLikelihood idref="coalescent" />
+			
+		</log>
+		<log id="county_level_all.fasta.aln.locrateMatrixLog" logEvery="10000" fileName="county_level_all.fasta.aln.loc.rates.log">
+			<parameter idref="loc.rates" />
+			<sumStatistic idref="loc.nonZeroRates" />
+		</log>
+
+
+		
+		<logTree id="treeFileLog" logEvery="10000" nexusFormat="true" fileName="county_level_all.fasta.aln.trees" sortTranslationTable="true">
+			<treeModel idref="treeModel" />
+			<trait name="rate" tag="default.rate">
+				<strictClockBranchRates idref="default.branchRates" />
+			</trait>
+			<trait name="rate" tag="loc.rate">
+				<strictClockBranchRates idref="loc.branchRates" />
+			</trait>
+			<joint idref="joint" />
+			<trait name="loc.states" tag="loc">
+				<ancestralTreeLikelihood idref="loc.treeLikelihood" />
+			</trait>
+
+		</logTree>
+
+		
+		<logCheckpoint id="checkpointFileLog" checkpointEvery="10000000" checkpointFinal="100000000" fileName="county_level_all.fasta.aln.chkpt" overwrite="false" />
+	</mcmc>
+	
+	<report>
+		<property name="timer">
+			<mcmc idref="mcmc" />
+		</property>
+	</report>
+	
+</beast>

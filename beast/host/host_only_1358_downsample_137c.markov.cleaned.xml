@@ -1,0 +1,3231 @@
+<?xml version='1.0' encoding='latin1'?>
+<beast version="10.x.x">
+	
+
+	
+	
+	<taxa id="taxa">
+		<taxon id="SRR31597201">
+			<date value="2024.8251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31597026">
+			<date value="2024.8251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31347631">
+			<date value="2024.8032786885246" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31605387">
+			<date value="2024.827868852459" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31347688">
+			<date value="2024.8060109289618" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32223119">
+			<date value="2025.0191780821917" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32653905">
+			<date value="2025.0575342465754" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32415279">
+			<date value="2025.0712328767124" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32254306">
+			<date value="2025.035616438356" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32254307">
+			<date value="2025.035616438356" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114762">
+			<date value="2025.7643835616439" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114756">
+			<date value="2025.8027397260273" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114754">
+			<date value="2025.8027397260273" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31914598">
+			<date value="2024.8852459016393" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31605180">
+			<date value="2024.8688524590164" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31914630">
+			<date value="2024.8852459016393" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31821113">
+			<date value="2024.9234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31960164">
+			<date value="2024.9590163934427" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31821220">
+			<date value="2024.9234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30572425">
+			<date value="2024.6502732240438" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30572432">
+			<date value="2024.6502732240438" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32868636">
+			<date value="2024.6666666666667" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30811257">
+			<date value="2024.6967213114754" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR35150569">
+			<date value="2025.5890410958905" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR35150555">
+			<date value="2025.5917808219178" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR35150567">
+			<date value="2025.5890410958905" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114806">
+			<date value="2025.7232876712328" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114802">
+			<date value="2025.7260273972602" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33830395">
+			<date value="2025.3616438356164" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33943348">
+			<date value="2025.3808219178081" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33830397">
+			<date value="2025.3616438356164" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32633107">
+			<date value="2025.1123287671232" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32415208">
+			<date value="2025.0904109589042" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33124632">
+			<date value="2025.131506849315" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33029766">
+			<date value="2025.2082191780821" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR32868673">
+			<date value="2025.1698630136987" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33508227">
+			<date value="2025.227397260274" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33029755">
+			<date value="2025.2054794520548" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33369791">
+			<date value="2025.2657534246575" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33681793">
+			<date value="2025.323287671233" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR34542529">
+			<date value="2025.4767123287672" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR34270179">
+			<date value="2025.4191780821918" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR34712485">
+			<date value="2025.4931506849316" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28912810">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28981003">
+			<date value="2024.311475409836" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953243">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30202050">
+			<date value="2024.5409836065573" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30090374">
+			<date value="2024.535519125683" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29740721">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29740715">
+			<date value="2024.48087431694" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29694558">
+			<date value="2024.448087431694" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29543385">
+			<date value="2024.4398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29740720">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29281453">
+			<date value="2024.3825136612022" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30811261">
+			<date value="2024.6475409836066" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30811283">
+			<date value="2024.6120218579235" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30490908">
+			<date value="2024.5928961748634" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30490907">
+			<date value="2024.5928961748634" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="EPI_ISL_19272813">
+			<date value="2024.3005464480875" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31820800">
+			<date value="2024.9289617486338" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31821008">
+			<date value="2024.9289617486338" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31486240">
+			<date value="2024.4371584699454" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30789595">
+			<date value="2024.4754098360656" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752608">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28912846">
+			<date value="2024.2021857923498" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752570">
+			<date value="2024.2185792349726" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752519">
+			<date value="2024.1994535519125" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752658">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PP914099">
+			<date value="2024.2568306010928" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28980988">
+			<date value="2024.3005464480875" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30811286">
+			<date value="2024.3852459016393" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953220">
+			<date value="2024.5054644808743" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953217">
+			<date value="2024.5054644808743" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752642">
+			<date value="2024.2540983606557" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752485">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29040270">
+			<date value="2024.3251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29377899">
+			<date value="2024.3852459016393" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PQ667491">
+			<date value="2024.3469945355191" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29377895">
+			<date value="2024.3879781420765" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PQ667531">
+			<date value="2024.3469945355191" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PQ482198">
+			<date value="2024.3497267759562" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PQ667555">
+			<date value="2024.3469945355191" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29377889">
+			<date value="2024.3852459016393" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752466">
+			<date value="2024.2267759562842" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953275">
+			<date value="2024.5027322404371" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29694538">
+			<date value="2024.4426229508197" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752579">
+			<date value="2024.2349726775956" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31016587">
+			<date value="2024.7349726775956" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR36114761">
+			<date value="2025.6438356164383" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33476737">
+			<date value="2025.282191780822" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33943353">
+			<date value="2025.3013698630136" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33830407">
+			<date value="2025.358904109589" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33830425">
+			<date value="2025.358904109589" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33943342">
+			<date value="2025.3972602739725" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR34270180">
+			<date value="2025.358904109589" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR34425685">
+			<date value="2025.454794520548" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR35150495">
+			<date value="2025.5506849315068" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33029754">
+			<date value="2025.2054794520548" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR33318624">
+			<date value="2025.2438356164384" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28981020">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28980987">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28981011">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV459349">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV459309">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV459429">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV459437">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29377869">
+			<date value="2024.3934426229507" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953237">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953236">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953235">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31168538">
+			<date value="2024.3060109289618" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PQ068391">
+			<date value="2024.2568306010928" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752644">
+			<date value="2024.2021857923498" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="EPI_ISL_19155831">
+			<date value="2024.2131147540983" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752446">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752521">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752563">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752574">
+			<date value="2024.2103825136612" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752649">
+			<date value="2024.2103825136612" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28834855">
+			<date value="2024.2158469945355" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="PP914092">
+			<date value="2024.2568306010928" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="PP836516">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="EPI_ISL_19155833">
+			<date value="2024.2513661202186" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PP836452">
+			<date value="2024.25956284153" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV643545">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752499">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV643513">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="PV643569">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752503">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28912848">
+			<date value="2024.2431693989072" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="EPI_ISL_19155876">
+			<date value="2024.24043715847" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28912851">
+			<date value="2024.2431693989072" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752566">
+			<date value="2024.2295081967213" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR28752468">
+			<date value="2024.1803278688524" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752660">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752595">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752520">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752682">
+			<date value="2024.204918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752495">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752507">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752553">
+			<date value="2024.2486338797814" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752638">
+			<date value="2024.2622950819673" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752640">
+			<date value="2024.2622950819673" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752641">
+			<date value="2024.2622950819673" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28981034">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912839">
+			<date value="2024.2704918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ051263">
+			<date value="2024.3497267759562" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ052735">
+			<date value="2024.3497267759562" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ052743">
+			<date value="2024.3497267759562" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377775">
+			<date value="2024.360655737705" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29040282">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29040281">
+			<date value="2024.308743169399" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28752536">
+			<date value="2024.2677595628415" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30235379">
+			<date value="2024.5737704918033" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30235377">
+			<date value="2024.5737704918033" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30235374">
+			<date value="2024.5737704918033" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29694526">
+			<date value="2024.4426229508197" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29694520">
+			<date value="2024.4535519125684" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953271">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29953272">
+			<date value="2024.5" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31016542">
+			<date value="2024.7459016393443" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31016556">
+			<date value="2024.7349726775956" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31016543">
+			<date value="2024.795081967213" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR34270159">
+			<date value="2025.4219178082192" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29543308">
+			<date value="2024.4234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28981029">
+			<date value="2024.3060109289618" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29182377">
+			<date value="2024.3469945355191" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29182379">
+			<date value="2024.3469945355191" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31062730">
+			<date value="2024.775956284153" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31062732">
+			<date value="2024.775956284153" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347787">
+			<date value="2024.7868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347842">
+			<date value="2024.8142076502731" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347735">
+			<date value="2024.792349726776" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347827">
+			<date value="2024.8142076502731" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31254317">
+			<date value="2024.8142076502731" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347825">
+			<date value="2024.8142076502731" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347844">
+			<date value="2024.8142076502731" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347804">
+			<date value="2024.7896174863388" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605379">
+			<date value="2024.8251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347746">
+			<date value="2024.792349726776" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347788">
+			<date value="2024.7868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347819">
+			<date value="2024.8196721311476" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31347780">
+			<date value="2024.792349726776" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31820929">
+			<date value="2024.9398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31820930">
+			<date value="2024.9398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31960137">
+			<date value="2024.9699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31821154">
+			<date value="2024.9398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31821141">
+			<date value="2024.9398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31960139">
+			<date value="2024.9699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31960145">
+			<date value="2024.9699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31821033">
+			<date value="2024.9398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31821184">
+			<date value="2024.9262295081967" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32415241">
+			<date value="2025.0767123287671" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32415240">
+			<date value="2025.0767123287671" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32006794">
+			<date value="2025.0027397260274" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32006829">
+			<date value="2024.896174863388" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605222">
+			<date value="2024.8743169398906" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605310">
+			<date value="2024.8415300546449" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605226">
+			<date value="2024.8415300546449" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605214">
+			<date value="2024.8415300546449" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605203">
+			<date value="2024.8415300546449" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605168">
+			<date value="2024.8387978142077" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31605184">
+			<date value="2024.8661202185792" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32125531">
+			<date value="2024.7131147540983" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32125532">
+			<date value="2024.7131147540983" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32125533">
+			<date value="2024.775956284153" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32125534">
+			<date value="2024.9262295081967" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32653936">
+			<date value="2024.896174863388" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR32653935">
+			<date value="2024.8989071038252" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31604987">
+			<date value="2024.8551912568305" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31820877">
+			<date value="2024.9234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR31604990">
+			<date value="2024.827868852459" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31604989">
+			<date value="2024.8251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR31604988">
+			<date value="2024.8251366120219" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29543372">
+			<date value="2024.4234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29455575">
+			<date value="2024.4234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29543373">
+			<date value="2024.4234972677596" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR29694493">
+			<date value="2024.450819672131" direction="forwards" units="years" />
+			<attr name="host">
+				cattle
+			</attr>
+		</taxon>
+		<taxon id="SRR30202019">
+			<date value="2024.5273224043715" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090397">
+			<date value="2024.464480874317" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851678">
+			<date value="2024.464480874317" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851677">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851676">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				wild_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851694">
+			<date value="2024.5054644808743" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29953201">
+			<date value="2024.532786885246" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090398">
+			<date value="2024.5245901639344" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090393">
+			<date value="2024.5245901639344" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851695">
+			<date value="2024.5054644808743" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30202041">
+			<date value="2024.5300546448088" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090377">
+			<date value="2024.532786885246" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30202044">
+			<date value="2024.5300546448088" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090402">
+			<date value="2024.5245901639344" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30202045">
+			<date value="2024.5300546448088" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090362">
+			<date value="2024.5409836065573" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR30090400">
+			<date value="2024.5245901639344" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740693">
+			<date value="2024.4699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740692">
+			<date value="2024.4699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740691">
+			<date value="2024.4699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740690">
+			<date value="2024.4699453551912" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29953269">
+			<date value="2024.5136612021859" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29953268">
+			<date value="2024.5136612021859" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29953264">
+			<date value="2024.5136612021859" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29851700">
+			<date value="2024.483606557377" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740737">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740735">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740688">
+			<date value="2024.4781420765028" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29740734">
+			<date value="2024.467213114754" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29694509">
+			<date value="2024.448087431694" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29694546">
+			<date value="2024.450819672131" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29694544">
+			<date value="2024.450819672131" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29543390">
+			<date value="2024.4398907103825" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29543381">
+			<date value="2024.4426229508197" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ012176">
+			<date value="2024.379781420765" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377872">
+			<date value="2024.379781420765" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ012200">
+			<date value="2024.3743169398906" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377882">
+			<date value="2024.4016393442623" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377916">
+			<date value="2024.379781420765" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ012168">
+			<date value="2024.379781420765" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ011120">
+			<date value="2024.3715846994535" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29543375">
+			<date value="2024.4043715846994" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ012192">
+			<date value="2024.3743169398906" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="PQ012160">
+			<date value="2024.377049180328" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377905">
+			<date value="2024.379781420765" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912832">
+			<date value="2024.2732240437158" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912779">
+			<date value="2024.27868852459" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912836">
+			<date value="2024.2704918032787" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912834">
+			<date value="2024.2732240437158" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912800">
+			<date value="2024.2732240437158" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912799">
+			<date value="2024.2732240437158" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912794">
+			<date value="2024.27868852459" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912793">
+			<date value="2024.27868852459" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912782">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912781">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR28912780">
+			<date value="2024.2868852459017" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377863">
+			<date value="2024.4180327868853" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29377862">
+			<date value="2024.4180327868853" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29281447">
+			<date value="2024.4016393442623" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+		<taxon id="SRR29281446">
+			<date value="2024.4016393442623" direction="forwards" units="years" />
+			<attr name="host">
+				domestic_avian
+			</attr>
+		</taxon>
+	</taxa>
+	
+	
+
+	
+	
+	<alignment id="alignment" dataType="nucleotide">
+		<sequence>
+			<taxon idref="SRR31597201" />
+			<!-- Genome sequence for accession SRR31597201 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31597026" />
+			<!-- Genome sequence for accession SRR31597026 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347631" />
+			<!-- Genome sequence for accession SRR31347631 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605387" />
+			<!-- Genome sequence for accession SRR31605387 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347688" />
+			<!-- Genome sequence for accession SRR31347688 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32223119" />
+			<!-- Genome sequence for accession SRR32223119 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32653905" />
+			<!-- Genome sequence for accession SRR32653905 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32415279" />
+			<!-- Genome sequence for accession SRR32415279 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32254306" />
+			<!-- Genome sequence for accession SRR32254306 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32254307" />
+			<!-- Genome sequence for accession SRR32254307 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114762" />
+			<!-- Genome sequence for accession SRR36114762 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114756" />
+			<!-- Genome sequence for accession SRR36114756 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114754" />
+			<!-- Genome sequence for accession SRR36114754 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31914598" />
+			<!-- Genome sequence for accession SRR31914598 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605180" />
+			<!-- Genome sequence for accession SRR31605180 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31914630" />
+			<!-- Genome sequence for accession SRR31914630 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821113" />
+			<!-- Genome sequence for accession SRR31821113 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31960164" />
+			<!-- Genome sequence for accession SRR31960164 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821220" />
+			<!-- Genome sequence for accession SRR31821220 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30572425" />
+			<!-- Genome sequence for accession SRR30572425 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30572432" />
+			<!-- Genome sequence for accession SRR30572432 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32868636" />
+			<!-- Genome sequence for accession SRR32868636 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30811257" />
+			<!-- Genome sequence for accession SRR30811257 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR35150569" />
+			<!-- Genome sequence for accession SRR35150569 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR35150555" />
+			<!-- Genome sequence for accession SRR35150555 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR35150567" />
+			<!-- Genome sequence for accession SRR35150567 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114806" />
+			<!-- Genome sequence for accession SRR36114806 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114802" />
+			<!-- Genome sequence for accession SRR36114802 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33830395" />
+			<!-- Genome sequence for accession SRR33830395 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33943348" />
+			<!-- Genome sequence for accession SRR33943348 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33830397" />
+			<!-- Genome sequence for accession SRR33830397 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32633107" />
+			<!-- Genome sequence for accession SRR32633107 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32415208" />
+			<!-- Genome sequence for accession SRR32415208 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33124632" />
+			<!-- Genome sequence for accession SRR33124632 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33029766" />
+			<!-- Genome sequence for accession SRR33029766 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32868673" />
+			<!-- Genome sequence for accession SRR32868673 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33508227" />
+			<!-- Genome sequence for accession SRR33508227 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33029755" />
+			<!-- Genome sequence for accession SRR33029755 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33369791" />
+			<!-- Genome sequence for accession SRR33369791 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33681793" />
+			<!-- Genome sequence for accession SRR33681793 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34542529" />
+			<!-- Genome sequence for accession SRR34542529 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34270179" />
+			<!-- Genome sequence for accession SRR34270179 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34712485" />
+			<!-- Genome sequence for accession SRR34712485 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912810" />
+			<!-- Genome sequence for accession SRR28912810 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28981003" />
+			<!-- Genome sequence for accession SRR28981003 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953243" />
+			<!-- Genome sequence for accession SRR29953243 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30202050" />
+			<!-- Genome sequence for accession SRR30202050 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090374" />
+			<!-- Genome sequence for accession SRR30090374 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740721" />
+			<!-- Genome sequence for accession SRR29740721 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740715" />
+			<!-- Genome sequence for accession SRR29740715 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694558" />
+			<!-- Genome sequence for accession SRR29694558 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543385" />
+			<!-- Genome sequence for accession SRR29543385 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740720" />
+			<!-- Genome sequence for accession SRR29740720 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29281453" />
+			<!-- Genome sequence for accession SRR29281453 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30811261" />
+			<!-- Genome sequence for accession SRR30811261 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30811283" />
+			<!-- Genome sequence for accession SRR30811283 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30490908" />
+			<!-- Genome sequence for accession SRR30490908 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30490907" />
+			<!-- Genome sequence for accession SRR30490907 -->
+			</sequence>
+		<sequence>
+			<taxon idref="EPI_ISL_19272813" />
+			<!-- Genome sequence for accession EPI_ISL_19272813 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31820800" />
+			<!-- Genome sequence for accession SRR31820800 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821008" />
+			<!-- Genome sequence for accession SRR31821008 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31486240" />
+			<!-- Genome sequence for accession SRR31486240 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30789595" />
+			<!-- Genome sequence for accession SRR30789595 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752608" />
+			<!-- Genome sequence for accession SRR28752608 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912846" />
+			<!-- Genome sequence for accession SRR28912846 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752570" />
+			<!-- Genome sequence for accession SRR28752570 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752519" />
+			<!-- Genome sequence for accession SRR28752519 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752658" />
+			<!-- Genome sequence for accession SRR28752658 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PP914099" />
+			<!-- Genome sequence for accession PP914099 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28980988" />
+			<!-- Genome sequence for accession SRR28980988 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30811286" />
+			<!-- Genome sequence for accession SRR30811286 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953220" />
+			<!-- Genome sequence for accession SRR29953220 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953217" />
+			<!-- Genome sequence for accession SRR29953217 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752642" />
+			<!-- Genome sequence for accession SRR28752642 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752485" />
+			<!-- Genome sequence for accession SRR28752485 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29040270" />
+			<!-- Genome sequence for accession SRR29040270 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377899" />
+			<!-- Genome sequence for accession SRR29377899 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ667491" />
+			<!-- Genome sequence for accession PQ667491 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377895" />
+			<!-- Genome sequence for accession SRR29377895 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ667531" />
+			<!-- Genome sequence for accession PQ667531 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ482198" />
+			<!-- Genome sequence for accession PQ482198 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ667555" />
+			<!-- Genome sequence for accession PQ667555 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377889" />
+			<!-- Genome sequence for accession SRR29377889 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752466" />
+			<!-- Genome sequence for accession SRR28752466 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953275" />
+			<!-- Genome sequence for accession SRR29953275 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694538" />
+			<!-- Genome sequence for accession SRR29694538 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752579" />
+			<!-- Genome sequence for accession SRR28752579 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31016587" />
+			<!-- Genome sequence for accession SRR31016587 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR36114761" />
+			<!-- Genome sequence for accession SRR36114761 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33476737" />
+			<!-- Genome sequence for accession SRR33476737 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33943353" />
+			<!-- Genome sequence for accession SRR33943353 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33830407" />
+			<!-- Genome sequence for accession SRR33830407 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33830425" />
+			<!-- Genome sequence for accession SRR33830425 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33943342" />
+			<!-- Genome sequence for accession SRR33943342 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34270180" />
+			<!-- Genome sequence for accession SRR34270180 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34425685" />
+			<!-- Genome sequence for accession SRR34425685 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR35150495" />
+			<!-- Genome sequence for accession SRR35150495 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33029754" />
+			<!-- Genome sequence for accession SRR33029754 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR33318624" />
+			<!-- Genome sequence for accession SRR33318624 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28981020" />
+			<!-- Genome sequence for accession SRR28981020 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28980987" />
+			<!-- Genome sequence for accession SRR28980987 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28981011" />
+			<!-- Genome sequence for accession SRR28981011 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV459349" />
+			<!-- Genome sequence for accession PV459349 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV459309" />
+			<!-- Genome sequence for accession PV459309 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV459429" />
+			<!-- Genome sequence for accession PV459429 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV459437" />
+			<!-- Genome sequence for accession PV459437 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377869" />
+			<!-- Genome sequence for accession SRR29377869 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953237" />
+			<!-- Genome sequence for accession SRR29953237 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953236" />
+			<!-- Genome sequence for accession SRR29953236 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953235" />
+			<!-- Genome sequence for accession SRR29953235 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31168538" />
+			<!-- Genome sequence for accession SRR31168538 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ068391" />
+			<!-- Genome sequence for accession PQ068391 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752644" />
+			<!-- Genome sequence for accession SRR28752644 -->
+			</sequence>
+		<sequence>
+			<taxon idref="EPI_ISL_19155831" />
+			<!-- Genome sequence for accession EPI_ISL_19155831 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752446" />
+			<!-- Genome sequence for accession SRR28752446 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752521" />
+			<!-- Genome sequence for accession SRR28752521 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752563" />
+			<!-- Genome sequence for accession SRR28752563 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752574" />
+			<!-- Genome sequence for accession SRR28752574 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752649" />
+			<!-- Genome sequence for accession SRR28752649 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28834855" />
+			<!-- Genome sequence for accession SRR28834855 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PP914092" />
+			<!-- Genome sequence for accession PP914092 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PP836516" />
+			<!-- Genome sequence for accession PP836516 -->
+			</sequence>
+		<sequence>
+			<taxon idref="EPI_ISL_19155833" />
+			<!-- Genome sequence for accession EPI_ISL_19155833 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PP836452" />
+			<!-- Genome sequence for accession PP836452 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV643545" />
+			<!-- Genome sequence for accession PV643545 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752499" />
+			<!-- Genome sequence for accession SRR28752499 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV643513" />
+			<!-- Genome sequence for accession PV643513 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PV643569" />
+			<!-- Genome sequence for accession PV643569 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752503" />
+			<!-- Genome sequence for accession SRR28752503 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912848" />
+			<!-- Genome sequence for accession SRR28912848 -->
+			</sequence>
+		<sequence>
+			<taxon idref="EPI_ISL_19155876" />
+			<!-- Genome sequence for accession EPI_ISL_19155876 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912851" />
+			<!-- Genome sequence for accession SRR28912851 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752566" />
+			<!-- Genome sequence for accession SRR28752566 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752468" />
+			<!-- Genome sequence for accession SRR28752468 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752660" />
+			<!-- Genome sequence for accession SRR28752660 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752595" />
+			<!-- Genome sequence for accession SRR28752595 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752520" />
+			<!-- Genome sequence for accession SRR28752520 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752682" />
+			<!-- Genome sequence for accession SRR28752682 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752495" />
+			<!-- Genome sequence for accession SRR28752495 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752507" />
+			<!-- Genome sequence for accession SRR28752507 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752553" />
+			<!-- Genome sequence for accession SRR28752553 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752638" />
+			<!-- Genome sequence for accession SRR28752638 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752640" />
+			<!-- Genome sequence for accession SRR28752640 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752641" />
+			<!-- Genome sequence for accession SRR28752641 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28981034" />
+			<!-- Genome sequence for accession SRR28981034 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912839" />
+			<!-- Genome sequence for accession SRR28912839 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ051263" />
+			<!-- Genome sequence for accession PQ051263 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ052735" />
+			<!-- Genome sequence for accession PQ052735 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ052743" />
+			<!-- Genome sequence for accession PQ052743 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377775" />
+			<!-- Genome sequence for accession SRR29377775 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29040282" />
+			<!-- Genome sequence for accession SRR29040282 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29040281" />
+			<!-- Genome sequence for accession SRR29040281 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28752536" />
+			<!-- Genome sequence for accession SRR28752536 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30235379" />
+			<!-- Genome sequence for accession SRR30235379 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30235377" />
+			<!-- Genome sequence for accession SRR30235377 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30235374" />
+			<!-- Genome sequence for accession SRR30235374 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694526" />
+			<!-- Genome sequence for accession SRR29694526 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694520" />
+			<!-- Genome sequence for accession SRR29694520 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953271" />
+			<!-- Genome sequence for accession SRR29953271 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953272" />
+			<!-- Genome sequence for accession SRR29953272 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31016542" />
+			<!-- Genome sequence for accession SRR31016542 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31016556" />
+			<!-- Genome sequence for accession SRR31016556 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31016543" />
+			<!-- Genome sequence for accession SRR31016543 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR34270159" />
+			<!-- Genome sequence for accession SRR34270159 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543308" />
+			<!-- Genome sequence for accession SRR29543308 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28981029" />
+			<!-- Genome sequence for accession SRR28981029 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29182377" />
+			<!-- Genome sequence for accession SRR29182377 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29182379" />
+			<!-- Genome sequence for accession SRR29182379 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31062730" />
+			<!-- Genome sequence for accession SRR31062730 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31062732" />
+			<!-- Genome sequence for accession SRR31062732 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347787" />
+			<!-- Genome sequence for accession SRR31347787 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347842" />
+			<!-- Genome sequence for accession SRR31347842 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347735" />
+			<!-- Genome sequence for accession SRR31347735 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347827" />
+			<!-- Genome sequence for accession SRR31347827 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31254317" />
+			<!-- Genome sequence for accession SRR31254317 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347825" />
+			<!-- Genome sequence for accession SRR31347825 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347844" />
+			<!-- Genome sequence for accession SRR31347844 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347804" />
+			<!-- Genome sequence for accession SRR31347804 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605379" />
+			<!-- Genome sequence for accession SRR31605379 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347746" />
+			<!-- Genome sequence for accession SRR31347746 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347788" />
+			<!-- Genome sequence for accession SRR31347788 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347819" />
+			<!-- Genome sequence for accession SRR31347819 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31347780" />
+			<!-- Genome sequence for accession SRR31347780 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31820929" />
+			<!-- Genome sequence for accession SRR31820929 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31820930" />
+			<!-- Genome sequence for accession SRR31820930 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31960137" />
+			<!-- Genome sequence for accession SRR31960137 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821154" />
+			<!-- Genome sequence for accession SRR31821154 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821141" />
+			<!-- Genome sequence for accession SRR31821141 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31960139" />
+			<!-- Genome sequence for accession SRR31960139 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31960145" />
+			<!-- Genome sequence for accession SRR31960145 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821033" />
+			<!-- Genome sequence for accession SRR31821033 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31821184" />
+			<!-- Genome sequence for accession SRR31821184 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32415241" />
+			<!-- Genome sequence for accession SRR32415241 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32415240" />
+			<!-- Genome sequence for accession SRR32415240 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32006794" />
+			<!-- Genome sequence for accession SRR32006794 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32006829" />
+			<!-- Genome sequence for accession SRR32006829 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605222" />
+			<!-- Genome sequence for accession SRR31605222 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605310" />
+			<!-- Genome sequence for accession SRR31605310 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605226" />
+			<!-- Genome sequence for accession SRR31605226 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605214" />
+			<!-- Genome sequence for accession SRR31605214 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605203" />
+			<!-- Genome sequence for accession SRR31605203 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605168" />
+			<!-- Genome sequence for accession SRR31605168 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31605184" />
+			<!-- Genome sequence for accession SRR31605184 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32125531" />
+			<!-- Genome sequence for accession SRR32125531 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32125532" />
+			<!-- Genome sequence for accession SRR32125532 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32125533" />
+			<!-- Genome sequence for accession SRR32125533 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32125534" />
+			<!-- Genome sequence for accession SRR32125534 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32653936" />
+			<!-- Genome sequence for accession SRR32653936 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR32653935" />
+			<!-- Genome sequence for accession SRR32653935 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31604987" />
+			<!-- Genome sequence for accession SRR31604987 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31820877" />
+			<!-- Genome sequence for accession SRR31820877 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31604990" />
+			<!-- Genome sequence for accession SRR31604990 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31604989" />
+			<!-- Genome sequence for accession SRR31604989 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR31604988" />
+			<!-- Genome sequence for accession SRR31604988 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543372" />
+			<!-- Genome sequence for accession SRR29543372 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29455575" />
+			<!-- Genome sequence for accession SRR29455575 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543373" />
+			<!-- Genome sequence for accession SRR29543373 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694493" />
+			<!-- Genome sequence for accession SRR29694493 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30202019" />
+			<!-- Genome sequence for accession SRR30202019 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090397" />
+			<!-- Genome sequence for accession SRR30090397 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851678" />
+			<!-- Genome sequence for accession SRR29851678 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851677" />
+			<!-- Genome sequence for accession SRR29851677 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851676" />
+			<!-- Genome sequence for accession SRR29851676 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851694" />
+			<!-- Genome sequence for accession SRR29851694 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953201" />
+			<!-- Genome sequence for accession SRR29953201 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090398" />
+			<!-- Genome sequence for accession SRR30090398 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090393" />
+			<!-- Genome sequence for accession SRR30090393 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851695" />
+			<!-- Genome sequence for accession SRR29851695 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30202041" />
+			<!-- Genome sequence for accession SRR30202041 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090377" />
+			<!-- Genome sequence for accession SRR30090377 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30202044" />
+			<!-- Genome sequence for accession SRR30202044 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090402" />
+			<!-- Genome sequence for accession SRR30090402 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30202045" />
+			<!-- Genome sequence for accession SRR30202045 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090362" />
+			<!-- Genome sequence for accession SRR30090362 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR30090400" />
+			<!-- Genome sequence for accession SRR30090400 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740693" />
+			<!-- Genome sequence for accession SRR29740693 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740692" />
+			<!-- Genome sequence for accession SRR29740692 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740691" />
+			<!-- Genome sequence for accession SRR29740691 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740690" />
+			<!-- Genome sequence for accession SRR29740690 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953269" />
+			<!-- Genome sequence for accession SRR29953269 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953268" />
+			<!-- Genome sequence for accession SRR29953268 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29953264" />
+			<!-- Genome sequence for accession SRR29953264 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29851700" />
+			<!-- Genome sequence for accession SRR29851700 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740737" />
+			<!-- Genome sequence for accession SRR29740737 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740735" />
+			<!-- Genome sequence for accession SRR29740735 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740688" />
+			<!-- Genome sequence for accession SRR29740688 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29740734" />
+			<!-- Genome sequence for accession SRR29740734 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694509" />
+			<!-- Genome sequence for accession SRR29694509 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694546" />
+			<!-- Genome sequence for accession SRR29694546 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29694544" />
+			<!-- Genome sequence for accession SRR29694544 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543390" />
+			<!-- Genome sequence for accession SRR29543390 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543381" />
+			<!-- Genome sequence for accession SRR29543381 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ012176" />
+			<!-- Genome sequence for accession PQ012176 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377872" />
+			<!-- Genome sequence for accession SRR29377872 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ012200" />
+			<!-- Genome sequence for accession PQ012200 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377882" />
+			<!-- Genome sequence for accession SRR29377882 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377916" />
+			<!-- Genome sequence for accession SRR29377916 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ012168" />
+			<!-- Genome sequence for accession PQ012168 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ011120" />
+			<!-- Genome sequence for accession PQ011120 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29543375" />
+			<!-- Genome sequence for accession SRR29543375 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ012192" />
+			<!-- Genome sequence for accession PQ012192 -->
+			</sequence>
+		<sequence>
+			<taxon idref="PQ012160" />
+			<!-- Genome sequence for accession PQ012160 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377905" />
+			<!-- Genome sequence for accession SRR29377905 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912832" />
+			<!-- Genome sequence for accession SRR28912832 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912779" />
+			<!-- Genome sequence for accession SRR28912779 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912836" />
+			<!-- Genome sequence for accession SRR28912836 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912834" />
+			<!-- Genome sequence for accession SRR28912834 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912800" />
+			<!-- Genome sequence for accession SRR28912800 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912799" />
+			<!-- Genome sequence for accession SRR28912799 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912794" />
+			<!-- Genome sequence for accession SRR28912794 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912793" />
+			<!-- Genome sequence for accession SRR28912793 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912782" />
+			<!-- Genome sequence for accession SRR28912782 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912781" />
+			<!-- Genome sequence for accession SRR28912781 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR28912780" />
+			<!-- Genome sequence for accession SRR28912780 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377863" />
+			<!-- Genome sequence for accession SRR29377863 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29377862" />
+			<!-- Genome sequence for accession SRR29377862 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29281447" />
+			<!-- Genome sequence for accession SRR29281447 -->
+			</sequence>
+		<sequence>
+			<taxon idref="SRR29281446" />
+			<!-- Genome sequence for accession SRR29281446 -->
+			</sequence>
+	</alignment>
+	
+	
+
+	
+	
+	<patterns id="patterns" from="1" strip="false">
+		<alignment idref="alignment" />
+	</patterns>
+	
+
+	
+	<generalDataType id="host.dataType">
+
+		
+		<state code="cattle" />
+		<state code="domestic_avian" />
+		<state code="wild_avian" />
+	</generalDataType>
+
+
+	
+	<attributePatterns id="host.pattern" attribute="host">
+		<taxa idref="taxa" />
+		<generalDataType idref="host.dataType" />
+	</attributePatterns>
+
+
+	
+	
+	<exponentialGrowth id="exponential" units="years">
+		<populationSize>
+			<parameter id="exponential.popSize" value="1.0" lower="0.0" />
+		</populationSize>
+		<growthRate>
+			<parameter id="exponential.growthRate" value="0.0" />
+		</growthRate>
+	</exponentialGrowth>
+
+	
+	<doublingTime id="doublingTime" timeUnits="days">
+		<growthRate timeUnits="years">
+			<parameter idref="exponential.growthRate" />
+		</growthRate>
+	</doublingTime>
+	
+
+	
+	
+
+	 
+	<newick id="startingTree">
+		(SRR28752519|A/cattle/Texas/24-009110-022/2024|H5N1|USA-TX|2024-03-14|cattle|B3.13:0.2211938756511,((SRR29040282|A/Hawk/New_Mexico/24-012607-001-original/2024|H5N1|USA-NM|2024-04-23|wild_avian|B3.13:0.1698508303163,(PQ068391|A/bovine/New_Mexico/A240920343-119/2024|H5N1|USA-NM|2024-04-04|cattle|B3.13:0.0692022647951,(((SRR28752495|A/chicken/Texas/24-009654-004/2024|H5N1|USA-TX|2024-04-01|domestic_avian|B3.13:0.021520166041,(SRR28912793|A/chicken/NM/24-010947-006-original/2024|H5N1|USA-NM|2024-04-12|domestic_avian|B3.13:0.0419245030517,((SRR28912780|A/chicken/NM/24-011263-003-original/2024|H5N1|USA-NM|2024-04-15|domestic_avian|B3.13:0.00637302823787,SRR28912781|A/chicken/NM/24-011263-002-original/2024|H5N1|USA-NM|2024-04-15|domestic_avian|B3.13:0.00637302823787):0.0364196023718,(SRR29377775|A/House_Sparrow/NM/24-014786-002-original/2024|H5N1|USA-NM|2024-05-12|wild_avian|B3.13:0.104744092284,(SRR28912799|A/chicken/NM/24-010832-002-original/2024|H5N1|USA-NM|2024-04-10|domestic_avian|B3.13:0.0107298199842,SRR28912800|A/chicken/NM/24-010832-001-original/2024|H5N1|USA-NM|2024-04-10|domestic_avian|B3.13:0.0107298199842):0.00658257831039):0.0118190301292):0.0073285937536):0.00965030779793):0.00467003404462,(SRR28912782|A/chicken/NM/24-011263-001-original/2024|H5N1|USA-NM|2024-04-15|domestic_avian|B3.13:0.019083228332,SRR29953243|A/cattle/CO/24-019381-004-original/2024|H5N1|USA-CO|2024-07-02|cattle|B3.13:0.23219798243034998):0.045358337873799996):0.0252180103268,(SRR31168538|A/cattle/NM/24-028969-016-original/2024|H5N1|USA-NM|2024-04-22|cattle|B3.13:0.05850209111682,(SRR28980988|A/cattle/TX/24-012457-002-original/2024|H5N1|USA-TX|2024-04-20|cattle|B3.13:0.048575203271,EPI_ISL_19272813|A/dairy_cow/Oklahoma/019481-002/2024|H5N1|USA-OK|2024-04-20|cattle|B3.13:0.04857520327098):0.00446240697153):0.05028316847591):0.00959733307139):0.0487359972151):0.130817776186,((((SRR28752595|A/Chicken/Texas/24-008355-002-original/2024|H5N1|USA-TX|2024-03-16|domestic_avian|B3.13:0.0279392157549,(SRR28752520|A/Chicken/Texas/24-008355-003-original/2024|H5N1|USA-TX|2024-03-16|domestic_avian|B3.13:0.0179844077483,(SRR28752682|A/Chicken/Texas/24-008355-004-original/2024|H5N1|USA-TX|2024-03-16|domestic_avian|B3.13:0.01206848095483,SRR28752660|A/Chicken/Texas/24-008355-006-original/2024|H5N1|USA-TX|2024-03-16|domestic_avian|B3.13:0.01206848095484):0.00591592679346):0.00995480800662):0.0696426092807,((SRR28752608|A/cattle/Texas/24-009109-007/2024|H5N1|USA-TX|2024-03-20|cattle|B3.13:0.048652116401899995,(PV643513|A/dairy_cow/Ohio/OH24-8700-1/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.00387024308423,PV643545|A/dairy_cow/Ohio/OH24-8700-2/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.00387024308423):0.06937203725221999):0.0149768787123,(SRR28752466|A/cattle/Michigan/24-009027-005/2024|H5N1|USA-MI|2024-03-24|cattle|B3.13:0.00734482502067,(PQ667555|A/cattle/MI/24-013789-012-original/2024|H5N1|USA-MI|2024-05-07|cattle|B3.13:0.0422774817317,((PQ667491|A/cattle/MI/24-013789-003-original/2024|H5N1|USA-MI|2024-05-07|cattle|B3.13:0.0216061438708,PQ667531|A/cattle/MI/24-013789-009-original/2024|H5N1|USA-MI|2024-05-07|cattle|B3.13:0.02160614387076):0.011321283103,SRR29377895|A/cattle/MI/24-015307-004-original/2024|H5N1|USA-MI|2024-05-22|cattle|B3.13:0.07391103353117):0.00935005475794):0.08528592252378):0.06721313184229):0.0448817916699):0.0609457318082,((((SRR28752649|A/grackle/Texas/24-008356-001/2024|H5N1|USA-TX|2024-03-18|wild_avian|B3.13:0.0216188996444,SRR28752570|A/cattle/Texas/24-009495-011/2024|H5N1|USA-TX|2024-03-21|cattle|B3.13:0.02981562095577):0.0322896320423,((SRR28752574|A/grackle/Texas/24-008356-003/2024|H5N1|USA-TX|2024-03-18|wild_avian|B3.13:0.0174574959909,SRR28834855|A/pigeon/Texas/24-008765-001/2024|H5N1|USA-TX|2024-03-20|wild_avian|B3.13:0.0229219768651):0.0111662024287,(EPI_ISL_19155831|A/grackle/Texas/062211-24-4/2024|H5N1|USA-TX|2024-03-19|wild_avian|B3.13:0.00855714098262,SRR28752521|A/grackle/Texas/24-008765-002/2024|H5N1|USA-TX|2024-03-20|wild_avian|B3.13:0.0112893814197):0.022798797874):0.025284833267130002):0.0578833322493,(((SRR28752644|A/cattle/New_Mexico/24-010195-001/2024|H5N1|USA-NM|2024-03-15|cattle|B3.13:0.0146734048475,SRR29040281|A/Grackle/New_Mexico/24-012607-002-original/2024|H5N1|USA-NM|2024-04-23|wild_avian|B3.13:0.12123078189628):0.0207414813963,(SRR30789595|A/cattle/Texas/Broad_ME_034/2024|H5N1|USA-TX|2024-06-23|cattle|B3.13:0.0622114077921,SRR31486240|A/cattle/Texas/Broad_MD_029/2024|H5N1|USA-TX|2024-06-09|cattle|B3.13:0.023960041671890003):0.2464275221675):0.0288150340552,((SRR30811286|A/cattle/TX/24-026360-005-original/2024|H5N1|USA-TX|2024-05-21|cattle|B3.13:0.03011227203582,SRR29953220|A/cattle/TX/24-019890-002-original/2024|H5N1|USA-TX|2024-07-04|cattle|B3.13:0.15033085127029996):0.01646406570723,(SRR29953217|A/cattle/TX/24-019890-006-original/2024|H5N1|USA-TX|2024-07-04|cattle|B3.13:0.04268834018429,(SRR31821008|A/cattle/TX/24-037225-061-original/2024|H5N1|USA-TX|2024-12-06|cattle|B3.13:0.02192835578075,SRR31820800|A/cattle/TX/24-037225-011-original/2024|H5N1|USA-TX|2024-12-06|cattle|B3.13:0.02192835578075):0.44425725216306):0.12410657679372):0.2007136918454):0.0393652223255):0.0203698260774,(SRR28912794|A/chicken/NM/24-010947-003-original/2024|H5N1|USA-NM|2024-04-12|domestic_avian|B3.13:0.173779964799,((PQ482198|A/cattle/MI/24-013999-006-original/2024|H5N1|USA-MI|2024-05-08|cattle|B3.13:0.1209549796383,(SRR28912839|A/chicken/MI/24-010651-001-original/2024|H5N1|USA-MI|2024-04-09|domestic_avian|B3.13:0.0355317707322,((SRR28752507|A/chicken/Michigan/24-009582-003/2024|H5N1|USA-MI|2024-04-01|domestic_avian|B3.13:0.00223944479412,SRR28752553|A/chicken/Michigan/24-009582-001/2024|H5N1|USA-MI|2024-04-01|domestic_avian|B3.13:0.00223944479412):0.009494667782119999,((SRR28752638|A/chicken/Michigan/24-010308-012/2024|H5N1|USA-MI|2024-04-06|domestic_avian|B3.13:0.00362138091995,SRR28752640|A/chicken/Michigan/24-010308-006-300/2024|H5N1|USA-MI|2024-04-06|domestic_avian|B3.13:0.00362138091995):0.0111259874344,SRR28752641|A/chicken/Michigan/24-010308-001-300/2024|H5N1|USA-MI|2024-04-06|domestic_avian|B3.13:0.01474736835435):0.0106479464078):0.00193973465875):0.00618823622842):0.062320775362700004,(((SRR28752503|A/cattle/Ohio/24-009586-005/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.00939098569333,PP836452|A/bovine/Ohio/B24OSU-413/2024|H5N1|USA-OH|2024-04-05|cattle|B3.13:0.02851666875323):0.03733208997069,(SRR28752642|A/cattle/Michigan/24-010303-002/2024|H5N1|USA-MI|2024-04-03|cattle|B3.13:0.03485828467247,(SRR28752485|A/cattle/Michigan/24-010071-005/2024|H5N1|USA-MI|2024-04-01|cattle|B3.13:0.030301223967059997,SRR29953275|A/cattle/MI/24-019382-007-original-repeat2/2024|H5N1|USA-MI|2024-07-03|cattle|B3.13:0.28439958462279996):0.0):0.0255259931771):0.00951389976838,(((SRR29377899|A/cattle/MI/24-015306-003-original/2024|H5N1|USA-MI|2024-05-21|cattle|B3.13:0.062652786265,SRR29377889|A/cattle/MI/24-015457-003-original/2024|H5N1|USA-MI|2024-05-21|cattle|B3.13:0.06265278626500001):0.1133782817806,((PQ052735|A/chicken/MI/24-013788-002-original/2024|H5N1|USA-MI|2024-05-08|domestic_avian|B3.13:0.0300496358139,PQ052743|A/chicken/MI/24-013788-004-original/2024|H5N1|USA-MI|2024-05-08|domestic_avian|B3.13:0.0300496358139):0.0127357568076,PQ051263|A/Turkey/MI/24-013788-001-original/2024|H5N1|USA-MI|2024-05-08|domestic_avian|B3.13:0.04278539262146):0.09772654974110001):0.020766896484573,((((EPI_ISL_19155876|A/dairy_cow/Ohio/B2408700-PBS-9/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.00293052817719,SRR28752499|A/cattle/Ohio/24-009586-009/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.00293052817719):0.0171683288023,PV643569|A/dairy_cow/Ohio/OH24-8700-7/2024|H5N1|USA-OH|2024-03-29|cattle|B3.13:0.02009885697954):0.0190653502331,(EPI_ISL_19155833|A/dairy_cow/Ohio/078707-24-10/2024|H5N1|USA-OH|2024-04-02|cattle|B3.13:0.0360175658266,SRR28912848|A/Cattle/Ohio/24-010202-011-original/2024|H5N1|USA-OH|2024-03-30|cattle|B3.13:0.027820844515154):0.01407560313459):0.0126696325013,((SRR28912851|A/Cattle/Ohio/24-010202-005-original/2024|H5N1|USA-OH|2024-03-30|cattle|B3.13:0.01437823873475,(PP836516|A/bovine/Ohio/B24OSU-497/2024|H5N1|USA-OH|2024-04-05|cattle|B3.13:0.0164336420613,SRR28981034|A/Turkey/MI/24-012167-001-original/2024|H5N1|USA-MI|2024-04-23|domestic_avian|B3.13:0.06561396993025001):0.0143380392962):0.0132123159722,SRR29040270|A/cattle/MI/24-013021-002-original/2024|H5N1|USA-MI|2024-04-29|cattle|B3.13:0.10955776782160001):0.0269755254441):0.000155381647073):0.00424775407141):0.0177491620823):0.06262624311499):0.0266877361428):0.0318303477047):0.0172534223122,(SRR28752468|A/chicken/Texas/24-007264-001/2024|H5N1|USA-TX|2024-03-07|domestic_avian|B3.13:0.12573597153309998,((((PP914099|A/cattle/Texas/MP10/2024|H5N1|USA-TX|2024-04-04|cattle|B3.13:0.0457686147226,PP914092|A/Grackle/Texas/USL_047/2024|H5N1|USA-TX|2024-04-04|wild_avian|B3.13:0.04576861472254):0.0687486156111,(SRR28752536|A/chicken/Kansas/24-010482-001/2024|H5N1|USA-KS|2024-04-08|domestic_avian|B3.13:0.0521348329507,(SRR28981003|A/Cattle/Colorado/24-012346-013-original/2024|H5N1|USA-CO|2024-04-24|cattle|B3.13:0.07744255852108001,((SRR28912810|A/Cattle/Colorado/24-012225-033-original/2024|H5N1|USA-CO|2024-04-23|cattle|B3.13:0.041110245695480004,(SRR29694509|A/Turkey/MN/24-017594-001-original/2024|H5N1|USA-MN|2024-06-13|domestic_avian|B3.13:0.0511494772249,SRR29455575|A/cattle/MN/24-016523-002-original/2024|H5N1|USA-MN|2024-06-04|cattle|B3.13:0.0265593132905):0.12930503076553998):0.0161346815064,((SRR29281453|A/Cattle/Colorado/24-014901-003-original/2024|H5N1|USA-CO|2024-05-20|cattle|B3.13:0.02607784039734,((SRR29740715|A/cattle/CO/24-018872-001-original/2024|H5N1|USA-CO|2024-06-25|cattle|B3.13:0.034821721982370005,SRR29953201|A/chicken/CO/24-020282-002-original/2024|H5N1|USA-CO|2024-07-14|domestic_avian|B3.13:0.0867342902885):0.05422234652597,(SRR30202041|A/chicken/CO/24-020796-007-original/2024|H5N1|USA-CO|2024-07-13|domestic_avian|B3.13:0.059184493193399995,((SRR29851694|A/chicken/CO/24-019377-002-original/2024|H5N1|USA-CO|2024-07-04|domestic_avian|B3.13:0.00835860705164,(SRR30090377|A/chicken/CO/24-020714-002-original/2024|H5N1|USA-CO|2024-07-14|domestic_avian|B3.13:0.0252214191875,(SRR30202045|A/chicken/CO/24-020796-003-original/2024|H5N1|USA-CO|2024-07-13|domestic_avian|B3.13:0.018317032265150003,SRR30090402|A/chicken/CO/24-020285-003-original/2024|H5N1|USA-CO|2024-07-11|domestic_avian|B3.13:0.01285255139067):0.0041721464852):0.0104595922359):0.0197166786464,((SRR29851695|A/chicken/CO/24-019377-001-original/2024|H5N1|USA-CO|2024-07-04|domestic_avian|B3.13:0.0153515272873,SRR30202019|A/Eurasian_Collared_Dove/CO/24-021011-001-original/2024|H5N1|USA-CO|2024-07-12|wild_avian|B3.13:0.03720945078454):0.00652098012407,((SRR30090393|A/chicken/CO/24-020285-011-original/2024|H5N1|USA-CO|2024-07-11|domestic_avian|B3.13:0.0175432686674,(SRR30090398|A/chicken/CO/24-020285-007-original/2024|H5N1|USA-CO|2024-07-11|domestic_avian|B3.13:0.00999910040761,SRR30090400|A/chicken/CO/24-020285-005-original/2024|H5N1|USA-CO|2024-07-11|domestic_avian|B3.13:0.00999910040761):0.00754416825982):0.0148627077785,(SRR30202044|A/chicken/CO/24-020796-004-original/2024|H5N1|USA-CO|2024-07-13|domestic_avian|B3.13:0.02687670979814,SRR30090362|A/chicken/CO/24-020798-001-original/2024|H5N1|USA-CO|2024-07-17|domestic_avian|B3.13:0.0404922722757):0.0109937475223):0.00859221402549):0.00620277828667):0.00651904356076):0.079039903184):0.0353944276267):0.0151234720486,(((SRR29740720|A/cattle/CO/24-018334-008-original/2024|H5N1|USA-CO|2024-06-20|cattle|B3.13:0.0207993966293,SRR29740721|A/cattle/CO/24-018334-007-original/2024|H5N1|USA-CO|2024-06-20|cattle|B3.13:0.0207993966293):0.038092464148,(SRR29740692|A/chicken/CO/24-018507-002-original/2024|H5N1|USA-CO|2024-06-21|domestic_avian|B3.13:0.0192176162409,(SRR29740693|A/chicken/CO/24-018507-001-original/2024|H5N1|USA-CO|2024-06-21|domestic_avian|B3.13:0.0137870419463,(SRR29740690|A/chicken/CO/24-018507-004-original/2024|H5N1|USA-CO|2024-06-21|domestic_avian|B3.13:0.00870695892518,SRR29740691|A/chicken/CO/24-018507-003-original/2024|H5N1|USA-CO|2024-06-21|domestic_avian|B3.13:0.00870695892518):0.00508008302111):0.00543057429465):0.0424064849734):0.0480337702009,(SRR30090374|A/cattle/CO/24-020715-006-original/2024|H5N1|USA-CO|2024-07-15|cattle|B3.13:0.1261985510817,(SRR29543385|A/cattle/CO/24-017154-004-original/2024|H5N1|USA-CO|2024-06-10|cattle|B3.13:0.0293393695313,(((SRR30490908|A/cattle/CO/24-022855-001-original/2024|H5N1|USA-CO|2024-08-05|cattle|B3.13:0.0769358147951,SRR30202050|A/cattle/CO/24-020797-004-original/2024|H5N1|USA-CO|2024-07-17|cattle|B3.13:0.02502324648907):0.0362351811737,(SRR30811283|A/cattle/CO/24-023569-001-original-repeat2/2024|H5N1|USA-CO|2024-08-12|cattle|B3.13:0.0102983724737,SRR30811261|A/cattle/CO/24-024945-001-original/2024|H5N1|USA-CO|2024-08-25|cattle|B3.13:0.04581749815673):0.1219983065557):0.0661564817704,(SRR29694558|A/cattle/CO/24-017660-001-original/2024|H5N1|USA-CO|2024-06-13|cattle|B3.13:0.012501963301470001,SRR30490907|A/cattle/CO/24-022858-001-original/2024|H5N1|USA-CO|2024-08-05|cattle|B3.13:0.15731070647099998):0.02201677126815):0.00301735627305):0.00123076624994):0.04903309082551):0.0189751350195):0.089814106559352):0.01746539088205):0.01840812142407):0.0733113591317):0.0444873832607,(SRR29377869|A/cattle/ID/24-015675-002-original/2024|H5N1|USA-ID|2024-05-24|cattle|B3.13:0.28371527478475,((SRR28752566|A/cattle/Kansas/24-009497-004/2024|H5N1|USA-KS|2024-03-25|cattle|B3.13:0.04188033190286,(((SRR29377862|A/Turkey/IA/24-016003-002-original/2024|H5N1|USA-IA|2024-06-02|domestic_avian|B3.13:0.0073075231441,SRR29377863|A/Turkey/IA/24-016003-001-original/2024|H5N1|USA-IA|2024-06-02|domestic_avian|B3.13:0.0073075231441):0.03168406664,(SRR29694520|A/cattle/IA/24-017584-010-original/2024|H5N1|USA-IA|2024-06-15|cattle|B3.13:0.02932481616879,(SRR30235377|A/cattle/SD/24-021715-007-original/2024|H5N1|USA-SD|2024-07-29|cattle|B3.13:0.0314539559307,(SRR30235374|A/cattle/SD/24-021716-002-original/2024|H5N1|USA-SD|2024-07-29|cattle|B3.13:0.02506491959103,SRR30235379|A/cattle/SD/24-021715-005-original/2024|H5N1|USA-SD|2024-07-29|cattle|B3.13:0.02506491959099):0.00638903633972):0.11808943947309):0.04518589929833):0.0283518563099,((SRR29281446|A/Chicken/Iowa/24-015328-002-original/2024|H5N1|USA-IA|2024-05-27|domestic_avian|B3.13:0.0151312837485,(SRR29281447|A/Chicken/Iowa/24-015328-001-original/2024|H5N1|USA-IA|2024-05-27|domestic_avian|B3.13:0.00583869239902,SRR29694526|A/cattle/IA/24-017583-001-original/2024|H5N1|USA-IA|2024-06-11|cattle|B3.13:0.046822298956350004):0.00929259134944):0.0222342435963,(((SRR30090397|A/House_Sparrow/IA/24-019375-001-original-repeat2/2024|H5N1|USA-IA|2024-06-19|wild_avian|B3.13:0.028327532294,SRR29953272|A/cattle/IA/24-019478-001-original/2024|H5N1|USA-IA|2024-07-02|cattle|B3.13:0.06384665797711):0.03282934155038,(SRR29851676|A/House_Sparrow/IA/24-018880-002-original/2024|H5N1|USA-IA|2024-06-20|wild_avian|B3.13:0.0152918672323,SRR29851677|A/American_Robin/IA/24-018880-001-original/2024|H5N1|USA-IA|2024-06-20|wild_avian|B3.13:0.0152918672323):0.0485972470491):0.0145576259232,(SRR29851678|A/American_Robin/IA/24-018879-003-original/2024|H5N1|USA-IA|2024-06-19|wild_avian|B3.13:0.05428585735145,SRR29953271|A/cattle/IA/24-019480-001-original/2024|H5N1|USA-IA|2024-07-02|cattle|B3.13:0.08980498303452):0.0214286424161):0.0244925576318):0.0135844761263):0.1630614759729):0.0410807982526,(SRR29694493|A/cattle/MN/24-017652-015-original/2024|H5N1|USA-MN|2024-06-14|cattle|B3.13:0.24958126824674,((SRR28912836|A/Turkey/Minnesota/24-010654-003-original/2024|H5N1|USA-MN|2024-04-09|domestic_avian|B3.13:0.0153218284736,((SRR28912832|A/Turkey/Minnesota/24-010655-003-original/2024|H5N1|USA-MN|2024-04-10|domestic_avian|B3.13:0.00362863060905,SRR28912834|A/Turkey/Minnesota/24-010655-001-original/2024|H5N1|USA-MN|2024-04-10|domestic_avian|B3.13:0.00362863060905):0.00389326403107,SRR28912779|A/Turkey/Minnesota/24-011426-001-original/2024|H5N1|USA-MN|2024-04-12|domestic_avian|B3.13:0.012986375514379998):0.01053217427063):0.04579067244298,(((PQ012192|A/Turkey/Minnesota/24-014760-001-original/2024|H5N1|USA-MN|2024-05-17|domestic_avian|B3.13:0.0159848289253,PQ012200|A/Turkey/Minnesota/24-014760-002-original/2024|H5N1|USA-MN|2024-05-17|domestic_avian|B3.13:0.0159848289253):0.0993493189168,(SRR29543373|A/cattle/MN/24-016370-003-original/2024|H5N1|USA-MN|2024-06-04|cattle|B3.13:0.0216602438709,SRR29543372|A/cattle/MN/24-016370-004-original/2024|H5N1|USA-MN|2024-06-04|cattle|B3.13:0.02166024387091):0.14285423183985002):0.00234373444528,((PQ011120|A/Chicken/Minnesota/24-014761-002-original/2024|H5N1|USA-MN|2024-05-16|domestic_avian|B3.13:0.02030411178382,(SRR29377905|A/chicken/MN/24-014972-003-original/2024|H5N1|USA-MN|2024-05-19|domestic_avian|B3.13:0.02259593138434,((SRR29377872|A/chicken/MN/24-014972-007-original/2024|H5N1|USA-MN|2024-05-19|domestic_avian|B3.13:0.00491357480166,SRR29377916|A/chicken/MN/24-014972-001-original/2024|H5N1|USA-MN|2024-05-19|domestic_avian|B3.13:0.00491357480166):0.00443362023028,SRR29543381|A/Turkey/MN/24-017162-003-original/2024|H5N1|USA-MN|2024-06-11|domestic_avian|B3.13:0.0721887250865):0.013248736352429999):0.00590490171108):0.0376095412799,(((SRR29377882|A/Turkey/MN/24-015549-002-original/2024|H5N1|USA-MN|2024-05-27|domestic_avian|B3.13:0.03331900868768,(PQ012168|A/Turkey/Minnesota/24-014759-001-original/2024|H5N1|USA-MN|2024-05-19|domestic_avian|B3.13:0.00464361829219,PQ012176|A/Turkey/Minnesota/24-014759-002-original/2024|H5N1|USA-MN|2024-05-19|domestic_avian|B3.13:0.00464361829219):0.00681746689827):0.0087707509086,((SRR29740734|A/chicken/MN/24-018153-004-original/2024|H5N1|USA-MN|2024-06-20|domestic_avian|B3.13:0.0217155210143,(SRR29740735|A/Turkey/MN/24-018153-003-original/2024|H5N1|USA-MN|2024-06-20|domestic_avian|B3.13:0.0118115962488,SRR29740737|A/Turkey/MN/24-018153-001-original/2024|H5N1|USA-MN|2024-06-20|domestic_avian|B3.13:0.0118115962488):0.00990392476552):0.07172327253506999,SRR29543375|A/Turkey/MN/24-015842-001-original-repeat2/2024|H5N1|USA-MN|2024-05-28|domestic_avian|B3.13:0.03059726349478):0.0142247365386):0.0330483586379,((PQ012160|A/Turkey/Minnesota/24-014687-003-original/2024|H5N1|USA-MN|2024-05-18|domestic_avian|B3.13:0.01227366756062,SRR29543390|A/Turkey/MN/24-017049-003-original/2024|H5N1|USA-MN|2024-06-10|domestic_avian|B3.13:0.07511519761522):0.0257940486415,((SRR29694544|A/Turkey/MN/24-017676-003-original/2024|H5N1|USA-MN|2024-06-14|domestic_avian|B3.13:0.0116413504564,SRR29694546|A/Turkey/MN/24-017676-001-original/2024|H5N1|USA-MN|2024-06-14|domestic_avian|B3.13:0.0116413504564):0.045575774263799995,((SRR29953269|A/Turkey/MN/24-019523-001-original/2024|H5N1|USA-MN|2024-07-07|domestic_avian|B3.13:0.02269904339204,(SRR29953264|A/Turkey/MN/24-019525-001-original/2024|H5N1|USA-MN|2024-07-07|domestic_avian|B3.13:0.00499578362328,SRR29953268|A/Turkey/MN/24-019524-001-original/2024|H5N1|USA-MN|2024-07-07|domestic_avian|B3.13:0.00499578362328):0.01770325976873):0.0740795068938,(SRR29740688|A/Turkey/MN/24-018646-001-original/2024|H5N1|USA-MN|2024-06-24|domestic_avian|B3.13:0.00670434189938,SRR29851700|A/Turkey/MN/24-019077-001-original/2024|H5N1|USA-MN|2024-06-26|domestic_avian|B3.13:0.0121688227736):0.054555082703399996):0.0232801044892):0.054621083285):0.0124802380977):0.0128301796384):0.0570319887865):0.04725975524113):0.0081408984777):0.0546913373185):0.0368197184):0.0119013606676):0.0298594249363,((SRR28752563|A/blackbird/Texas/24-008357-001/2024|H5N1|USA-TX|2024-03-16|wild_avian|B3.13:0.111113865262,SRR28752658|A/cattle/Texas/24-009367-007/2024|H5N1|USA-TX|2024-03-25|cattle|B3.13:0.1357040291968):0.0112616227997,((SRR28752446|A/blackbird/Texas/24-008354-001/2024|H5N1|USA-TX|2024-03-16|wild_avian|B3.13:0.0514123215136,SRR28912846|A/Cattle/Texas/24-009810-001/2024|H5N1|USA-TX|2024-03-15|cattle|B3.13:0.04868008107648):0.0473542214648,(SRR28752579|A/cattle/Idaho/24-009491-006/2024|H5N1|USA-ID|2024-03-27|cattle|B3.13:0.0937259350623,(((SRR28981029|A/Chicken/Idaho/24-012234-003-original/2024|H5N1|USA-ID|2024-04-22|domestic_avian|B3.13:0.0325332578442,(SRR29543308|A/chicken/ID/24-016669-001-original/2024|H5N1|USA-ID|2024-06-04|domestic_avian|B3.13:0.107265694728,SRR29182379|A/Chicken/Idaho/24-013706-001-original/2024|H5N1|USA-ID|2024-05-07|domestic_avian|B3.13:0.030762962487380002):0.0427539019141):0.0190777889438,(PV459349|A/Dairy_cow/ID/W241070094-19/2024|H5N1|USA-ID|2024-04-15|cattle|B3.13:0.0258560697519,(PV459437|A/Dairy_cow/ID/W241140067-19/2024|H5N1|USA-ID|2024-04-23|cattle|B3.13:0.0215553343285,PV459429|A/Dairy_cow/ID/W241140067-18/2024|H5N1|USA-ID|2024-04-23|cattle|B3.13:0.0215553343285):0.0261586589206):0.00662929397602):0.00969418371061,(PV459309|A/Dairy_cow/ID/W241070094-1/2024|H5N1|USA-ID|2024-04-15|cattle|B3.13:0.02170275116528,(SRR28981011|A/Cattle/Idaho/24-012341-018-original/2024|H5N1|USA-ID|2024-04-23|cattle|B3.13:0.03790668254536,(SRR28980987|A/Cattle/Idaho/24-011573-012-original-repeat/2024|H5N1|USA-ID|2024-04-15|cattle|B3.13:0.0145788423498,((SRR28981020|A/Cattle/Idaho/24-012341-008-original/2024|H5N1|USA-ID|2024-04-23|cattle|B3.13:0.00513816648886,SRR29182377|A/Chicken/Idaho/24-013708-001-original/2024|H5N1|USA-ID|2024-05-07|domestic_avian|B3.13:0.0433895326091):0.0220092843339,((SRR29694538|A/cattle/ID/24-017483-003-original/2024|H5N1|USA-ID|2024-06-11|cattle|B3.13:0.0124087319319,(SRR29953237|A/cattle/ID/24-019780-001-original/2024|H5N1|USA-ID|2024-07-02|cattle|B3.13:0.0241261402086,(SRR31016556|A/Turkey/ID/24-028518-001-original/2024|H5N1|USA-ID|2024-09-26|domestic_avian|B3.13:0.0919396658264,((SRR31016543|A/Duck/ID/24-028747-002-original/2024|H5N1|USA-ID|2024-10-18|domestic_avian|B3.13:0.0610060349732,SRR31016542|A/chicken/ID/24-028747-003-original/2024|H5N1|USA-ID|2024-09-30|domestic_avian|B3.13:0.011825707104490001):0.0272174654899,SRR31016587|A/cattle/ID/24-028356-002-original/2024|H5N1|USA-ID|2024-09-26|cattle|B3.13:0.0281142108457):0.0638254549808):0.1671591519773):0.045659640903700005):0.08506342347275,(((SRR29953235|A/cattle/ID/24-019780-003-original/2024|H5N1|USA-ID|2024-07-02|cattle|B3.13:0.00485705288646,SRR29953236|A/cattle/ID/24-019780-002-original/2024|H5N1|USA-ID|2024-07-02|cattle|B3.13:0.00485705288646):0.06617599205478,((SRR31062730|A/chicken/UT/24-030010-002-original/2024|H5N1|USA-UT|2024-10-11|domestic_avian|B3.13:0.00795247800109,SRR31062732|A/chicken/UT/24-030010-001-original/2024|H5N1|USA-UT|2024-10-11|domestic_avian|B3.13:0.00795247800109):0.0146459191333,(((SRR31604988|A/White-winged_Dove/UT/24-032857-016-original/2024|H5N1|USA-UT|2024-10-29|wild_avian|B3.13:0.00678289715417,SRR31604989|A/Rock_Pigeon/UT/24-032857-004-original/2024|H5N1|USA-UT|2024-10-29|wild_avian|B3.13:0.00678289715417):0.0291347842379,SRR31604990|A/Rock_Pigeon/UT/24-032856-014-original/2024|H5N1|USA-UT|2024-10-30|wild_avian|B3.13:0.038649921829200004):0.0153994748529,SRR31820877|A/cattle/UT/24-036342-001-original/2024|H5N1|USA-UT|2024-12-04|cattle|B3.13:0.1496778119825):0.0204615687584):0.32439093196):0.027333903350900003,(((SRR31347804|A/chicken/CA/24-031285-004-original/2024|H5N1|USA-CA|2024-10-16|domestic_avian|B3.13:0.081762290199,SRR31605310|A/chicken/CA/24-033224-002-original/2024|H5N1|USA-CA|2024-11-04|domestic_avian|B3.13:0.1336748585049):0.026858622113,((SRR31347787|A/chicken/CA/24-031286-005-original/2024|H5N1|USA-CA|2024-10-15|domestic_avian|B3.13:0.068231327832,SRR31347780|A/Turkey/CA/24-031284-017-original/2024|H5N1|USA-CA|2024-10-17|domestic_avian|B3.13:0.0736958087062):0.0229708064249,(SRR31347788|A/chicken/CA/24-031286-004-original/2024|H5N1|USA-CA|2024-10-15|domestic_avian|B3.13:0.058452458018199996,(SRR31347735|A/Turkey/CA/24-031284-003-original/2024|H5N1|USA-CA|2024-10-17|domestic_avian|B3.13:0.0478769427955,SRR31347746|A/Turkey/CA/24-031284-023-original/2024|H5N1|USA-CA|2024-10-17|domestic_avian|B3.13:0.0478769427955):0.0160399960969):0.0327496762388):0.014686537618):0.1120207864761,((SRR32868636|A/cattle/CA/25-007549-043-original/2024|H5N1|USA-CA|2024-09-01|cattle|B3.13:0.041377870775020004,(SRR31605222|A/chicken/CA/24-034440-001-original/2024|H5N1|USA-CA|2024-11-16|domestic_avian|B3.13:0.180525402153,(SRR33508227|A/cattle/CA/25-010626-002-original/2025|H5N1|USA-CA|2025-03-25|cattle|B3.13:0.12142383654752,((SRR35150567|A/cattle/CA/25-022450-002-original/2025|H5N1|USA-CA|2025-08-04|cattle|B3.13:0.28977250578460007,SRR33830395|A/cattle/CA/25-015723-002-original/2025|H5N1|USA-CA|2025-05-13|cattle|B3.13:0.06237524551076):0.0420102119483,(((SRR34270179|A/cattle/CA/25-017500-001-original/2025|H5N1|USA-CA|2025-06-03|cattle|B3.13:0.00657780283842,SRR34542529|A/cattle/CA/25-019214-004-original/2025|H5N1|USA-CA|2025-06-24|cattle|B3.13:0.0641120494139):0.0123289269317,(SRR35150555|A/cattle/CA/25-022469-001-original/2025|H5N1|USA-CA|2025-08-05|cattle|B3.13:0.0841890896384,SRR36114806|A/cattle/CA/25-026033-002-original/2025|H5N1|USA-CA|2025-09-22|cattle|B3.13:0.2156959389534):0.1073203798577):0.0427310153809,(SRR34712485|A/cattle/CA/25-019706-004-original/2025|H5N1|USA-CA|2025-06-30|cattle|B3.13:0.095717325775,(SRR35150569|A/cattle/CA/25-022447-001-original/2025|H5N1|USA-CA|2025-08-04|cattle|B3.13:0.12240400432290001,(SRR36114802|A/cattle/CA/25-026044-001-original/2025|H5N1|USA-CA|2025-09-23|cattle|B3.13:0.00523683184703,(SRR36114756|A/cattle/CA/25G02652-001-original/2025|H5N1|USA-CA|2025-10-21|cattle|B3.13:0.0278741859984,SRR36114754|A/cattle/CA/25G02652-003-original/2025|H5N1|USA-CA|2025-10-21|cattle|B3.13:0.027874185998399997):0.0540749746157):0.25415347384548):0.06920373241088):0.039893022115799995):0.1002819588836):0.1512849544309):0.4121818859894):0.0685027418457):0.0466807276308,((SRR31597026|A/cattle/CA/24-032622-002-original/2024|H5N1|USA-CA|2024-10-29|cattle|B3.13:0.2249331589995,(SRR31605387|A/cattle/CA/24-033689-001-original/2024|H5N1|USA-CA|2024-10-30|cattle|B3.13:0.1178694965794,SRR31605180|A/cattle/CA/24-034826-002-original/2024|H5N1|USA-CA|2024-11-14|cattle|B3.13:0.15885310313676002):0.109795902857):0.00343978263909,((SRR30572432|A/cattle/CA/24-024710-001-original/2024|H5N1|USA-CA|2024-08-26|cattle|B3.13:0.00792574947056,(SRR32125533|A/Rock_Pigeon/CA/24-030989-002-original/2024|H5N1|USA-CA|2024-10-11|wild_avian|B3.13:0.1118405229108,((SRR31347631|A/cattle/CA/24-031623-002-original/2024|H5N1|USA-CA|2024-10-21|cattle|B3.13:0.0720107344858,((SRR31605226|A/chicken/CA/24-033225-001-original/2024|H5N1|USA-CA|2024-11-04|domestic_avian|B3.13:0.0450333593172,(SRR31605168|A/chicken/CA/24-033226-001-original/2024|H5N1|USA-CA|2024-11-03|domestic_avian|B3.13:0.0327318355449,SRR31605214|A/chicken/CA/24-033225-002-original/2024|H5N1|USA-CA|2024-11-04|domestic_avian|B3.13:0.035464075982):0.0095692833352):0.019387213887689998,SRR31605203|A/chicken/CA/24-033225-003-original/2024|H5N1|USA-CA|2024-11-04|domestic_avian|B3.13:0.06442057320483001):0.0458415274011):0.0342546723686,((SRR32653936|A/Western_Gull/CA/24-035901-001-original-repeat2/2024|H5N1|USA-CA|2024-11-24|wild_avian|B3.13:0.0392218975912,(SRR32125534|A/Western_Gull/CA/24-036781-001-original/2024|H5N1|USA-CA|2024-12-05|wild_avian|B3.13:0.0394813282925,SRR32653935|A/Western_Gull/CA/24-035903-001-original-repeat2/2024|H5N1|USA-CA|2024-11-25|wild_avian|B3.13:0.012158923921):0.0297952141073):0.0782899212354,((SRR31347819|A/chicken/CA/24-031862-009-original/2024|H5N1|USA-CA|2024-10-27|domestic_avian|B3.13:0.0184936174487,SRR31347842|A/chicken/CA/24-031666-019-original/2024|H5N1|USA-CA|2024-10-25|domestic_avian|B3.13:0.0130291365742):0.0101128741861,((SRR33681793|A/cattle/CA/25-014314-004-original/2025|H5N1|USA-CA|2025-04-29|cattle|B3.13:0.28556650623263,SRR33029755|A/cattle/CA/25-009812-001-original/2025|H5N1|USA-CA|2025-03-17|cattle|B3.13:0.16775828705408):0.2293571461403,(SRR32868673|A/cattle/CA/25-007939-007-original/2025|H5N1|USA-CA|2025-03-04|cattle|B3.13:0.1027999289976,SRR33029766|A/cattle/CA/25-010022-002-original/2025|H5N1|USA-CA|2025-03-18|cattle|B3.13:0.14115609338110002):0.25869906584089997):0.0172983793477):0.0124025949514):0.0816497628912):0.0328975204281):0.0217682866689):0.04603267431128,((SRR30572425|A/cattle/CA/24-024712-003-original/2024|H5N1|USA-CA|2024-08-26|cattle|B3.13:0.0184826265419,(SRR30811257|A/cattle/CA/24-027096-002-original/2024|H5N1|USA-CA|2024-09-12|cattle|B3.13:0.0390704658908,(SRR33476737|A/cattle/ID/25-012902-012-original/2025|H5N1|USA-ID|2025-04-14|cattle|B3.13:0.2625822514344,(SRR33830407|A/cattle/ID/25-015688-002-original/2025|H5N1|USA-ID|2025-05-12|cattle|B3.13:0.2092070877095,(SRR33029754|A/cattle/ID/25-009823-001-original/2025|H5N1|USA-ID|2025-03-17|cattle|B3.13:0.0230905360029,((SRR33943342|A/cattle/ID/25-016724-004-original/2025|H5N1|USA-ID|2025-05-26|cattle|B3.13:0.14354567080595998,(SRR34425685|A/cattle/ID/25-018598-003-original/2025|H5N1|USA-ID|2025-06-16|cattle|B3.13:0.167545924058,SRR34270180|A/cattle/ID/25-015748-001-original-tile/2025|H5N1|USA-ID|2025-05-12|cattle|B3.13:0.0716555130988):0.0335339933238):0.0456711127804,(SRR33318624|A/cattle/ID/25-011468-004-original/2025|H5N1|USA-ID|2025-03-31|cattle|B3.13:0.0169355204719,(SRR33830425|A/cattle/ID/25-015684-001-original/2025|H5N1|USA-ID|2025-05-12|cattle|B3.13:0.11201902099764,((SRR33943353|A/cattle/ID/25-013598-001-original-repeat2/2025|H5N1|USA-ID|2025-04-21|cattle|B3.13:0.02583088971,SRR34270159|A/Duck/ID/25-017727-002-original/2025|H5N1|USA-ID|2025-06-04|domestic_avian|B3.13:0.14637883491578):0.0190707956165,(SRR35150495|A/cattle/ID/25-021148-001-original-repeat2/2025|H5N1|USA-ID|2025-07-21|cattle|B3.13:0.28248325155907994,SRR36114761|A/cattle/ID/25-023936-001-original-repeat2/2025|H5N1|USA-ID|2025-08-24|cattle|B3.13:0.37563393649042):0.0117335022606):0.00958308909577):0.0199849926248):0.0188566055804):0.0256545743343):0.03269189417224):0.1300874924922):0.3618400625903):0.0259788692949):0.014136631448370001,((SRR31605184|A/chicken/CA/24-034727-002-original-repeat/2024|H5N1|USA-CA|2024-11-13|domestic_avian|B3.13:0.2041558214722,(SRR31605379|A/chicken/CA/24-033698-003-original/2024|H5N1|USA-CA|2024-10-29|domestic_avian|B3.13:0.0899144855312,(SRR31597201|A/cattle/CA/24-033016-001-original/2024|H5N1|USA-CA|2024-10-29|cattle|B3.13:0.0706236318458,(SRR32415279|A/cattle/CA/25-003434-001-original/2025|H5N1|USA-CA|2025-01-27|cattle|B3.13:0.23783621779302003,(SRR31821033|A/chicken/CA/24-037217-013-original/2024|H5N1|USA-CA|2024-12-10|domestic_avian|B3.13:0.07762899944181001,((SRR31821154|A/chicken/CA/24-037217-019-original/2024|H5N1|USA-CA|2024-12-10|domestic_avian|B3.13:0.0108554579138,SRR31821141|A/chicken/CA/24-037217-031-original/2024|H5N1|USA-CA|2024-12-10|domestic_avian|B3.13:0.010855457913790001):0.036441449487999995,(SRR31820930|A/chicken/CA/24-037219-016-original/2024|H5N1|USA-CA|2024-12-10|domestic_avian|B3.13:0.0143017765773,SRR31820929|A/chicken/CA/24-037219-017-original/2024|H5N1|USA-CA|2024-12-10|domestic_avian|B3.13:0.014301776577259999):0.03299513082452):0.03033209204):0.0288650520211):0.0788836787435):0.0192908536854):0.0732577293836):0.0264669004669,((SRR32125531|A/White-faced_Ibis/CA/24-031704-004-original/2024|H5N1|USA-CA|2024-09-18|wild_avian|B3.13:0.0250451727962,SRR32125532|A/Rock_Pigeon/CA/24-031704-003-original/2024|H5N1|USA-CA|2024-09-18|wild_avian|B3.13:0.0250451727962):0.024948504688,(SRR31347688|A/cattle/CA/24-032034-002-original/2024|H5N1|USA-CA|2024-10-22|cattle|B3.13:0.13215189159687002,((SRR31821184|A/Duck/CA/24-036645-013-original/2024|H5N1|USA-CA|2024-12-05|domestic_avian|B3.13:0.2206195888779,(SRR31347827|A/chicken/CA/24-031667-005-original/2024|H5N1|USA-CA|2024-10-25|domestic_avian|B3.13:0.0266832998462,(SRR31254317|A/chicken/CA/24-031667-002-original/2024|H5N1|USA-CA|2024-10-25|domestic_avian|B3.13:0.0172544439433,(SRR31347825|A/chicken/CA/24-031667-007-original/2024|H5N1|USA-CA|2024-10-25|domestic_avian|B3.13:0.00975811682469,SRR31347844|A/chicken/CA/24-031666-017-original/2024|H5N1|USA-CA|2024-10-25|domestic_avian|B3.13:0.009758116824690001):0.00749632711861):0.00942885590295):0.08191443110858):0.0233023488089,(SRR32633107|A/cattle/CA/25-005501-001-original/2025|H5N1|USA-CA|2025-02-11|cattle|B3.13:0.3731928669887,((SRR32415208|A/cattle/CA/25-004236-002-original/2025|H5N1|USA-CA|2025-02-03|cattle|B3.13:0.3120878244528,(SRR31960137|A/chicken/CA/24-038444-009-original/2024|H5N1|USA-CA|2024-12-21|domestic_avian|B3.13:0.0398893672478,(SRR31960145|A/chicken/CA/24-038444-002-original/2024|H5N1|USA-CA|2024-12-21|domestic_avian|B3.13:0.0240529823906,SRR31960139|A/chicken/CA/24-038444-007-original/2024|H5N1|USA-CA|2024-12-21|domestic_avian|B3.13:0.0240529823906):0.0158363848572):0.15173285349249999):0.0112133415294,((SRR31604987|A/Rock_Pigeon/CA/24-033967-002-original/2024|H5N1|USA-CA|2024-11-09|wild_avian|B3.13:0.0293057312697,(SRR32006829|A/chicken/CA/24-036009-001-original/2024|H5N1|USA-CA|2024-11-24|domestic_avian|B3.13:0.0614432751709,SRR32653905|A/cattle/CA/25-002723-001-original/2025|H5N1|USA-CA|2025-01-22|cattle|B3.13:0.22280265835849):0.00884606265636):0.034513928581600004,((SRR32006794|A/chicken/CA/25-000136-003-original/2025|H5N1|USA-CA|2025-01-02|domestic_avian|B3.13:0.125555127635,(SRR31821113|A/cattle/CA/24-036426-002-original/2024|H5N1|USA-CA|2024-12-04|cattle|B3.13:0.025405316747900003,(SRR32415241|A/Turkey/CA/25-003574-001-original/2025|H5N1|USA-CA|2025-01-29|domestic_avian|B3.13:0.0385915840949,SRR32415240|A/Turkey/CA/25-003574-002-original/2025|H5N1|USA-CA|2025-01-29|domestic_avian|B3.13:0.038591584094950004):0.140028793661):0.0209073526194):0.06217934372720001,((SRR31914630|A/cattle/CA/24-035196-001-original/2024|H5N1|USA-CA|2024-11-20|cattle|B3.13:0.0100873517214,(SRR32254306|A/cattle/CA/25-002070-002-original/2025|H5N1|USA-CA|2025-01-14|cattle|B3.13:0.00851999444907,SRR32254307|A/cattle/CA/25-002070-001-original/2025|H5N1|USA-CA|2025-01-14|cattle|B3.13:0.00851999444907):0.15193789398906):0.04675066935745,((SRR31960164|A/cattle/CA/24-038338-002-original/2024|H5N1|USA-CA|2024-12-17|cattle|B3.13:0.10001150813910001,SRR31914598|A/cattle/CA/24-035209-007-original/2024|H5N1|USA-CA|2024-11-20|cattle|B3.13:0.0262410163358):0.020633919231650002,(SRR32223119|A/cattle/CA/25-001176-001-original/2025|H5N1|USA-CA|2025-01-08|cattle|B3.13:0.15382929604672,(SRR31821220|A/cattle/CA/24-036397-001-original/2024|H5N1|USA-CA|2024-12-04|cattle|B3.13:0.0336270143619,(SRR33124632|A/cattle/CA/25-006251-004-original/2025|H5N1|USA-CA|2025-02-18|cattle|B3.13:0.0473071163922,(SRR33369791|A/cattle/CA/25-012189-004-original/2025|H5N1|USA-CA|2025-04-08|cattle|B3.13:0.0264857585643,(SRR33830397|A/cattle/CA/25-015713-005-original/2025|H5N1|USA-CA|2025-05-13|cattle|B3.13:0.02384755524273,(SRR33943348|A/cattle/CA/25-016317-003-original/2025|H5N1|USA-CA|2025-05-20|cattle|B3.13:0.024435946928119998,SRR36114762|A/cattle/CA/25G02121-010-original/2025|H5N1|USA-CA|2025-10-07|cattle|B3.13:0.40799759076427):0.0185896905063):0.0985286142806):0.1550679331705):0.19432947952489998):0.0245214672526):0.026977820073099998):0.00996308551138):0.0134026258955):0.0236336576859):0.0242618040574):0.0279738927869):0.056828329625499996):0.00844853314462):0.0107379607506):0.0276235799739):0.0178435305867):0.0213391657916):0.0):0.01815560212214):0.00963228071027):0.167342735843):0.05648225629297):0.06355507683888):0.00928931502434):0.0014699166983):0.00565399211721):0.0204767962732):0.10345895592993999):0.0350952527248):0.0236089450837):0.0145759821628):0.0133746652429):0.0254548436883):0.0210624907342):0.0298148866357)
+	</newick>
+
+	
+	<treeModel id="treeModel">
+		<coalescentTree idref="startingTree" />
+		<rootHeight>
+			<parameter id="treeModel.rootHeight" />
+		</rootHeight>
+		<nodeHeights internalNodes="true">
+			<parameter id="treeModel.internalNodeHeights" />
+		</nodeHeights>
+		<nodeHeights internalNodes="true" rootNode="true">
+			<parameter id="treeModel.allInternalNodeHeights" />
+		</nodeHeights>
+	</treeModel>
+
+	
+	<treeHeightStatistic id="rootHeight">
+		<treeModel idref="treeModel" />
+	</treeHeightStatistic>
+
+	
+	<treeLengthStatistic id="treeLength">
+		<treeModel idref="treeModel" />
+	</treeLengthStatistic>
+
+	
+	<tmrcaStatistic id="age(root)" absolute="true">
+		<treeModel idref="treeModel" />
+	</tmrcaStatistic>
+	
+
+	
+	<coalescentLikelihood id="coalescent">
+		<model>
+			<exponentialGrowth idref="exponential" />
+		</model>
+		<intervals>
+			<treeIntervals>
+				<treeModel idref="treeModel" />
+			</treeIntervals>
+		</intervals>
+	</coalescentLikelihood>
+	
+
+	
+	<strictClockBranchRates id="default.branchRates">
+		<rate>
+			<parameter id="default.clock.rate" value="0.00479" lower="0.0" />
+		</rate>
+	</strictClockBranchRates>
+	
+	<rateStatistic id="default.meanRate" name="default.meanRate" mode="mean" internal="true" external="true">
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="default.branchRates" />
+	</rateStatistic>
+	
+
+	
+	<strictClockBranchRates id="host.branchRates">
+		<rate>
+			<parameter id="host.clock.rate" value="0.001" lower="0.0" />
+		</rate>
+	</strictClockBranchRates>
+	
+	<rateStatistic id="host.meanRate" name="host.meanRate" mode="mean" internal="true" external="true">
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="host.branchRates" />
+	</rateStatistic>
+	
+
+	
+	<gtrModel id="gtr">
+		<frequencies>
+			<frequencyModel dataType="nucleotide">
+				<frequencies>
+					<parameter id="frequencies" value="0.25 0.25 0.25 0.25" />
+				</frequencies>
+			</frequencyModel>
+		</frequencies>
+		<rates>
+			<parameter id="gtr.rates" dimension="6" value="1.0" lower="0.0" />
+		</rates>
+	</gtrModel>
+
+	
+	<siteModel id="siteModel">
+		<substitutionModel>
+			<gtrModel idref="gtr" />
+		</substitutionModel>
+		<gammaShape gammaCategories="8" discretization="equal">
+			<parameter id="alpha" value="0.5" lower="0.0" />
+		</gammaShape>
+	</siteModel>
+
+	
+	<statistic id="mu" name="mu">
+		<siteModel idref="siteModel" />
+	</statistic>
+	
+	
+
+	
+	<treeDataLikelihood id="default.treeLikelihood" useAmbiguities="false" usePreOrder="false">
+		<partition>
+			<patterns idref="patterns" />
+			<siteModel idref="siteModel" />
+		</partition>
+		<treeModel idref="treeModel" />
+		<strictClockBranchRates idref="default.branchRates" />
+	</treeDataLikelihood>
+	
+
+	
+	<generalSubstitutionModel id="host.model" randomizeIndicator="false">
+		<generalDataType idref="host.dataType" />
+		<frequencies>
+			<frequencyModel id="host.frequencyModel" normalize="true">
+				<generalDataType idref="host.dataType" />
+				<frequencies>
+					<parameter id="host.frequencies" dimension="3" />
+				</frequencies>
+			</frequencyModel>
+		</frequencies>
+
+		
+		<rates>
+			<parameter id="host.rates" dimension="6" value="1.0" lower="0.0" />
+		</rates>
+		<rateIndicator>
+			<parameter id="host.indicators" dimension="6" value="1.0" />
+		</rateIndicator>
+	</generalSubstitutionModel>
+	<sumStatistic id="host.nonZeroRates" elementwise="true">
+		<parameter idref="host.indicators" />
+	</sumStatistic>
+	<productStatistic id="host.actualRates" elementwise="false">
+		<parameter idref="host.indicators" />
+		<parameter idref="host.rates" />
+	</productStatistic>
+	<siteModel id="host.siteModel">
+		<substitutionModel>
+			<generalSubstitutionModel idref="host.model" />
+		</substitutionModel>
+	</siteModel>
+
+	
+	<markovJumpsTreeLikelihood id="host.treeLikelihood" stateTagName="host.states" useUniformization="true" saveCompleteHistory="true" logCompleteHistory="true">
+		<attributePatterns idref="host.pattern" />
+		<treeModel idref="treeModel" />
+		<siteModel idref="host.siteModel" />
+		<generalSubstitutionModel idref="host.model" />
+		<strictClockBranchRates idref="host.branchRates" />
+
+		
+		<frequencyModel id="host.root.frequencyModel" normalize="true">
+			<generalDataType idref="host.dataType" />
+			<frequencies>
+				<parameter id="host.root.frequencies" dimension="3" />
+			</frequencies>
+		</frequencyModel>
+		<parameter id="host.count" value=" 0.0 1.0 1.0 1.0 0.0 1.0 1.0 1.0 0.0" />
+
+	</markovJumpsTreeLikelihood>
+
+	
+	<operators id="operators" optimizationSchedule="log">
+		<deltaExchange delta="0.01" weight="1">
+			<parameter idref="gtr.rates" />
+		</deltaExchange>
+		<deltaExchange delta="0.01" weight="1">
+			<parameter idref="frequencies" />
+		</deltaExchange>
+		<scaleOperator scaleFactor="0.75" weight="1">
+			<parameter idref="alpha" />
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="default.clock.rate" />
+		</scaleOperator>
+		<upDownOperator scaleFactor="0.75" weight="3">
+			<up>
+				<parameter idref="treeModel.allInternalNodeHeights" />
+			</up>
+			<down>
+				<parameter idref="default.clock.rate" />
+			</down>
+		</upDownOperator>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="host.clock.rate" />
+		</scaleOperator>
+		<upDownOperator scaleFactor="0.75" weight="3">
+			<up>
+				<parameter idref="treeModel.allInternalNodeHeights" />
+			</up>
+			<down>
+				<parameter idref="host.clock.rate" />
+			</down>
+		</upDownOperator>
+		<subtreeLeap size="1.0" weight="1358">
+			<treeModel idref="treeModel" />
+		</subtreeLeap>
+		<fixedHeightSubtreePruneRegraft weight="135.8">
+			<treeModel idref="treeModel" />
+		</fixedHeightSubtreePruneRegraft>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="exponential.popSize" />
+		</scaleOperator>
+		<randomWalkOperator windowSize="1.0" weight="3">
+			<parameter idref="exponential.growthRate" />
+		</randomWalkOperator>
+		<scaleOperator scaleFactor="0.75" weight="15" scaleAllIndependently="true">
+			<parameter idref="host.rates" />
+		</scaleOperator>
+		<bitFlipOperator weight="7">
+			<parameter idref="host.indicators" />
+		</bitFlipOperator>
+		<deltaExchange delta="0.75" weight="1">
+			<parameter idref="host.root.frequencies" />
+		</deltaExchange>
+	</operators>
+	
+
+	
+	<mcmc id="mcmc" chainLength="50000000" autoOptimize="true" operatorAnalysis="host_only_corrected_1358taxa.markov.ops">
+		<joint id="joint">
+			<prior id="prior">
+				<dirichletPrior alpha="1.0" sumsTo="6.0">
+					<parameter idref="gtr.rates" />
+				</dirichletPrior>
+				<dirichletPrior alpha="1.0" sumsTo="1.0">
+					<parameter idref="frequencies" />
+				</dirichletPrior>
+				<exponentialPrior mean="0.5" offset="0.0">
+					<parameter idref="alpha" />
+				</exponentialPrior>
+				<truncated lower="0.0">
+					<normalPrior mean="0.00479" stdev="3.11E-4">
+						<parameter idref="default.clock.rate" />
+					</normalPrior>
+				</truncated>
+				<ctmcScalePrior>
+					<ctmcScale>
+						<parameter idref="host.clock.rate" />
+					</ctmcScale>
+					<treeModel idref="treeModel" />
+				</ctmcScalePrior>
+				<gammaPrior shape="0.001" scale="1000.0" offset="0.0">
+					<parameter idref="exponential.popSize" />
+				</gammaPrior>
+				<laplacePrior mean="0.0" scale="100.0">
+					<parameter idref="exponential.growthRate" />
+				</laplacePrior>
+				<poissonPrior mean="2.0" offset="0.0">
+					<statistic idref="host.nonZeroRates" />
+				</poissonPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="host.frequencies" />
+				</uniformPrior>
+				<cachedPrior>
+					<gammaPrior shape="1.0" scale="1.0" offset="0.0">
+						<parameter idref="host.rates" />
+					</gammaPrior>
+					<parameter idref="host.rates" />
+				</cachedPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="host.root.frequencies" />
+				</uniformPrior>
+				<coalescentLikelihood idref="coalescent" />
+				
+				
+				<strictClockBranchRates idref="default.branchRates" />
+				<strictClockBranchRates idref="host.branchRates" />
+				<generalSubstitutionModel idref="host.model" />
+
+			</prior>
+			<likelihood id="likelihood">
+				<treeDataLikelihood idref="default.treeLikelihood" />
+				<markovJumpsTreeLikelihood idref="host.treeLikelihood" />
+
+			</likelihood>
+		</joint>
+		<operators idref="operators" />
+
+		
+		<log id="screenLog" logEvery="1000">
+			<column label="Joint" dp="4" width="12">
+				<joint idref="joint" />
+			</column>
+			<column label="Prior" dp="4" width="12">
+				<prior idref="prior" />
+			</column>
+			<column label="Likelihood" dp="4" width="12">
+				<likelihood idref="likelihood" />
+			</column>
+			<column label="age(root)" sf="6" width="12">
+				<tmrcaStatistic idref="age(root)" />
+			</column>
+			<column label="default.clock.rate" sf="6" width="12">
+				<parameter idref="default.clock.rate" />
+			</column>
+			<column label="host.clock.rate" sf="6" width="12">
+				<parameter idref="host.clock.rate" />
+			</column>
+			<column label="host.nonZeroRates" dp="0" width="6">
+				<sumStatistic idref="host.nonZeroRates" />
+			</column>
+
+		</log>
+
+		
+		<log id="fileLog" logEvery="5000" fileName="host_only_1358_downsample_137c.markov.log" overwrite="false">
+			<joint idref="joint" />
+			<prior idref="prior" />
+			<likelihood idref="likelihood" />
+			<treeHeightStatistic idref="rootHeight" />
+			<tmrcaStatistic idref="age(root)" />
+			<treeLengthStatistic idref="treeLength" />
+			<parameter idref="exponential.popSize" />
+			<parameter idref="exponential.growthRate" />
+			<parameter idref="doublingTime" />
+			<parameter idref="gtr.rates" />
+			<parameter idref="frequencies" />
+			<parameter idref="alpha" />
+			<parameter idref="default.clock.rate" />
+			<parameter idref="host.clock.rate" />
+			<rateStatistic idref="default.meanRate" />
+			<rateStatistic idref="host.meanRate" />
+
+			<parameter idref="host.rates" />
+			<parameter idref="host.indicators" />
+			<sumStatistic idref="host.nonZeroRates" />
+
+			<treeDataLikelihood idref="default.treeLikelihood" />
+			<strictClockBranchRates idref="default.branchRates" />
+			<strictClockBranchRates idref="host.branchRates" />
+			<markovJumpsTreeLikelihood idref="host.treeLikelihood" />
+			<generalSubstitutionModel idref="host.model" />
+
+			<coalescentLikelihood idref="coalescent" />
+			
+		</log>
+		<log id="host_only_1358_downsample_137c.markov.hostrateMatrixLog" logEvery="5000" fileName="host_only_1358_downsample_137c.markov.host.rates.log">
+			<parameter idref="host.rates" />
+			<sumStatistic idref="host.nonZeroRates" />
+		</log>
+
+
+		
+		<logTree id="treeFileLog" logEvery="5000" nexusFormat="true" fileName="host_only_1358_downsample_137c.markov.trees" sortTranslationTable="true">
+			<treeModel idref="treeModel" />
+			<trait name="rate" tag="default.rate">
+				<strictClockBranchRates idref="default.branchRates" />
+			</trait>
+			<trait name="rate" tag="host.rate">
+				<strictClockBranchRates idref="host.branchRates" />
+			</trait>
+			<joint idref="joint" />
+			<trait name="host.states" tag="host">
+				<ancestralTreeLikelihood idref="host.treeLikelihood" />
+			</trait>
+			<trait name="host.count" tag="host.count">
+				<ancestralTreeLikelihood idref="host.treeLikelihood" />
+			</trait>
+
+		</logTree>
+
+		
+		<log id="completeJumpHistory" logEvery="5000" fileName="host_only_1358_downsample_137c.markov.host.jumpHistory.log">
+			<completeHistoryLogger>
+				<markovJumpsTreeLikelihood idref="host.treeLikelihood" />
+			</completeHistoryLogger>
+		</log>
+
+		
+		<logCheckpoint id="checkpointFileLog" checkpointEvery="5000000" checkpointFinal="500000000" fileName="host_only_1358_downsample_137c.markov.chkpt" overwrite="false" />
+	</mcmc>
+	
+	<report>
+		<property name="timer">
+			<mcmc idref="mcmc" />
+		</property>
+	</report>
+	
+</beast>

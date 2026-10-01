@@ -1,0 +1,1881 @@
+# ═══════════════════════════════════════════════════════════════════════
+# Unified Simulation Pipeline Configuration
+# ═══════════════════════════════════════════════════════════════════════
+# Single source of truth for the H5N1 B3.13 cattle epidemic simulation
+# pipeline: model parameters, ABC calibration, and downstream scenarios.
+
+# ── Data paths (relative to this file's directory) ──
+data:
+  county_data: data/dairy_cows_by_counties.csv
+  network_dir: data/networks/
+
+# ── Timeline constants ──
+timeline:
+  tx_detection_date: "2024-03-25"
+  tx_detection_doy: 85          # day-of-year for TX detection (2024 is leap year)
+  tx_to_npi_days: 35            # March 25 → April 29
+  tmrca_offset_min: 79          # Jan 6, 2024 → Mar 25, 2024
+  tmrca_offset_max: 137         # Nov 9, 2023 → Mar 25, 2024
+  tmrca_offset_default: 102     # Dec 14, 2023 → Mar 25, 2024
+
+# ── Model defaults ──
+model:
+  seed_county: 48069            # Castro County, TX (FIPS)
+  num_days: 830                 # tmrca_offset (~100) + 730 (24 months)
+  master_seed: 42
+
+# ── Observed data (APHIS) ──
+# Days after TX first detection. D1.1 states (AZ, NV, WI) excluded.
+# OR excluded — no cattle outbreak.
+observed:
+  first_detection_days:
+    TX: 0
+    KS: 1
+    MI: 4
+    NM: 7
+    ID: 8
+    OH: 8
+    NC: 15
+    SD: 15
+    CO: 31
+    MN: 72
+    WY: 73
+    IA: 74
+    OK: 108
+    CA: 158
+    UT: 220
+    NE: 539
+
+  outbreak_counts:
+    CA: 773
+    CO: 64
+    ID: 108
+    IA: 13
+    KS: 4
+    MI: 31
+    MN: 9
+    NE: 1
+    NM: 9
+    NC: 1
+    OH: 1
+    OK: 2
+    SD: 7
+    TX: 30
+    UT: 13
+    WY: 1
+
+# ── ABC-SMC calibration ──
+abc:
+  prior_bounds:
+    beta:         [0.001, 0.05]
+    alpha:        [0.0, 1.0]
+    gamma:        [0.0, 1.0]
+    mu_c:         [7, 59]
+    npi_factor:   [0.0, 1.0]
+    tmrca_offset: [79, 137]
+
+  integer_params: [mu_c, tmrca_offset]
+
+  smc:
+    num_rounds: 4
+    num_proposals: 1500
+    acceptance_quantile: 0.05   # top 5% = 75 particles
+    network_pool_size: 50
+    networks_per_proposal: 3
+    sims_per_network: 2
+
+  distance:
+    mode: intensity             # 'timing' or 'intensity'
+    missing_penalty: 2.0
+    early_late_split_days: 30
+    include_intensity: true
+    trajectories_per_proposal: 6
+
+# ── ABC sensitivity axes ──
+# 4 axes, 8 total runs (vary one axis from baseline at a time)
+abc_sensitivity:
+  axes:
+    missing_penalty: [1.0, 2.0, 5.0]
+    early_late_split_days: [20, 30, 45]
+    trajectories_per_proposal: [6, 15]
+    include_intensity: [true, false]
+  baseline:
+    missing_penalty: 2.0
+    early_late_split_days: 30
+    trajectories_per_proposal: 6
+    include_intensity: true
+
+# ── Downstream simulation defaults ──
+simulation:
+  num_networks: 1000
+  num_sims: 5
+  batch_size: 50
+  seed: 42
+  save_transmission_log: true
+
+# ── Named county sets (for targeted NPI scenarios) ──
+# Only dairy counties (those in the simulation) are included.
+county_sets:
+  castro:
+    - 48069
+
+  panhandle:
+    - 48065   # Carson
+    - 48069   # Castro
+    - 48111   # Dallam
+    - 48117   # Deaf Smith
+    - 48129   # Donley
+    - 48179   # Gray
+    - 48191   # Hall
+    - 48205   # Hartley
+    - 48295   # Lipscomb
+    - 48341   # Moore
+    - 48369   # Parmer
+    - 48421   # Sherman
+    - 48437   # Swisher
+    - 48483   # Wheeler
+
+  panhandle_geo1:  # panhandle + adjacent counties (TX, NM, KS, OK, CO)
+    # Panhandle (14)
+    - 48065
+    - 48069
+    - 48111
+    - 48117
+    - 48129
+    - 48179
+    - 48191
+    - 48205
+    - 48295
+    - 48341
+    - 48369
+    - 48421
+    - 48437
+    - 48483
+    # Ring 1 (28)
+    - 8009    # Baca CO
+    - 20007   # Barber KS
+    - 20025   # Clark KS
+    - 20045   # Ellis KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 20093   # Kearny KS
+    - 20119   # Meade KS
+    - 20171   # Scott KS
+    - 20175   # Seward KS
+    - 20189   # Stevens KS
+    - 35007   # Colfax NM
+    - 35009   # Curry NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 40007   # Beaver OK
+    - 40045   # Ellis OK
+    - 40057   # Harmon OK
+    - 40059   # Harper OK
+    - 40065   # Jackson OK
+    - 40129   # Roger Mills OK
+    - 48017   # Bailey TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48197   # Hardeman TX
+    - 48279   # Lamb TX
+    - 48303   # Lubbock TX
+    - 48345   # Motley TX
+
+  panhandle_geo2:  # panhandle + 2 geographic rings (TX, NM, KS, OK, CO)
+    # Panhandle (14)
+    - 48065
+    - 48069
+    - 48111
+    - 48117
+    - 48129
+    - 48179
+    - 48191
+    - 48205
+    - 48295
+    - 48341
+    - 48369
+    - 48421
+    - 48437
+    - 48483
+    # Ring 1 (28)
+    - 8009
+    - 20007
+    - 20025
+    - 20045
+    - 20057
+    - 20069
+    - 20093
+    - 20119
+    - 20171
+    - 20175
+    - 20189
+    - 35007
+    - 35009
+    - 35041
+    - 35059
+    - 40007
+    - 40045
+    - 40057
+    - 40059
+    - 40065
+    - 40129
+    - 48017
+    - 48153
+    - 48189
+    - 48197
+    - 48279
+    - 48303
+    - 48345
+    # Ring 2 (39)
+    - 8011    # Bent CO
+    - 8023    # Costilla CO
+    - 8071    # Las Animas CO
+    - 8099    # Prowers CO
+    - 20047   # Edwards KS
+    - 20055   # Finney KS
+    - 20059   # Franklin KS
+    - 20063   # Gove KS
+    - 20067   # Grant KS
+    - 20075   # Hamilton KS
+    - 20077   # Harper KS
+    - 20081   # Haskell KS
+    - 20083   # Hodgeman KS
+    - 20087   # Jefferson KS
+    - 20091   # Johnson KS
+    - 20097   # Kiowa KS
+    - 20103   # Leavenworth KS
+    - 20121   # Miami KS
+    - 20139   # Osage KS
+    - 20151   # Pratt KS
+    - 20177   # Shawnee KS
+    - 20187   # Stanton KS
+    - 35005   # Chaves NM
+    - 35025   # Lea NM
+    - 35033   # Mora NM
+    - 35037   # Quay NM
+    - 35055   # Taos NM
+    - 40003   # Alfalfa OK
+    - 40009   # Beckham OK
+    - 40025   # Cimarron OK
+    - 40039   # Custer OK
+    - 40043   # Dewey OK
+    - 40075   # Kiowa OK
+    - 40139   # Texas OK
+    - 40141   # Tillman OK
+    - 40151   # Woods OK
+    - 40153   # Woodward OK
+    - 48305   # Lynn TX
+    - 48445   # Terry TX
+
+  panhandle_net1:  # panhandle + top shipping destinations (8 states)
+    # Panhandle (14)
+    - 48065
+    - 48069
+    - 48111
+    - 48117
+    - 48129
+    - 48179
+    - 48191
+    - 48205
+    - 48295
+    - 48341
+    - 48369
+    - 48421
+    - 48437
+    - 48483
+    # Network 1-hop (25): top destinations by volume
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6047    # Merced CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8087    # Morgan CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 19167   # Sioux IA
+    - 20057   # Ford KS
+    - 20171   # Scott KS
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40139   # Texas OK
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48279   # Lamb TX
+    - 48303   # Lubbock TX
+
+  panhandle_net2:  # panhandle + 2 network hops (10 states)
+    # Panhandle (14)
+    - 48065
+    - 48069
+    - 48111
+    - 48117
+    - 48129
+    - 48179
+    - 48191
+    - 48205
+    - 48295
+    - 48341
+    - 48369
+    - 48421
+    - 48437
+    - 48483
+    # Network 1-hop (25)
+    - 4013
+    - 4021
+    - 6047
+    - 6107
+    - 8063
+    - 8087
+    - 8123
+    - 8125
+    - 19167
+    - 20057
+    - 20171
+    - 35005
+    - 35009
+    - 35025
+    - 35041
+    - 35059
+    - 35061
+    - 40139
+    - 48009
+    - 48017
+    - 48143
+    - 48153
+    - 48189
+    - 48279
+    - 48303
+    # Network 2-hop (19)
+    - 6019    # Fresno CA
+    - 6029    # Kern CA
+    - 6031    # Kings CA
+    - 6039    # Madera CA
+    - 6071    # San Bernardino CA
+    - 6077    # San Joaquin CA
+    - 6099    # Stanislaus CA
+    - 8075    # Logan CO
+    - 8121    # Washington CO
+    - 19035   # Cherokee IA
+    - 19119   # Lyon IA
+    - 19141   # O'Brien IA
+    - 19143   # Osceola IA
+    - 19149   # Plymouth IA
+    - 19193   # Woodbury IA
+    - 27105   # Nobles MN
+    - 27133   # Rock MN
+    - 46083   # Lincoln SD
+    - 46127   # Union SD
+
+  panhandle_net3:  # panhandle + 3 network hops (~13 states)
+    # Panhandle (14)
+    - 48065
+    - 48069
+    - 48111
+    - 48117
+    - 48129
+    - 48179
+    - 48191
+    - 48205
+    - 48295
+    - 48341
+    - 48369
+    - 48421
+    - 48437
+    - 48483
+    # Network 1-hop (25)
+    - 4013
+    - 4021
+    - 6047
+    - 6107
+    - 8063
+    - 8087
+    - 8123
+    - 8125
+    - 19167
+    - 20057
+    - 20171
+    - 35005
+    - 35009
+    - 35025
+    - 35041
+    - 35059
+    - 35061
+    - 40139
+    - 48009
+    - 48017
+    - 48143
+    - 48153
+    - 48189
+    - 48279
+    - 48303
+    # Network 2-hop (19)
+    - 6019
+    - 6029
+    - 6031
+    - 6039
+    - 6071
+    - 6077
+    - 6099
+    - 8075
+    - 8121
+    - 19035
+    - 19119
+    - 19141
+    - 19143
+    - 19149
+    - 19193
+    - 27105
+    - 27133
+    - 46083
+    - 46127
+    # Network 3-hop (30): top destinations by volume from net2 counties
+    - 4027    # Yuma AZ
+    - 6025    # Imperial CA
+    - 6041    # Marin CA
+    - 6065    # Riverside CA
+    - 6067    # Sacramento CA
+    - 6095    # Solano CA
+    - 6097    # Sonoma CA
+    - 8069    # Larimer CO
+    - 8089    # Otero CO
+    - 8095    # Phillips CO
+    - 16031   # Cassia ID
+    - 16047   # Gooding ID
+    - 16053   # Jerome ID
+    - 19021   # Buena Vista IA
+    - 19027   # Carroll IA
+    - 19029   # Cass IA
+    - 19047   # Crawford IA
+    - 19059   # Dickinson IA
+    - 19093   # Ida IA
+    - 19147   # Palo Alto IA
+    - 19155   # Pottawattamie IA
+    - 19161   # Sac IA
+    - 20055   # Finney KS
+    - 20069   # Gray KS
+    - 27015   # Brown MN
+    - 27033   # Cottonwood MN
+    - 27063   # Jackson MN
+    - 27081   # Lincoln MN
+    - 27083   # Lyon MN
+    - 27091   # Martin MN
+    - 27101   # Murray MN
+    - 27117   # Pipestone MN
+    - 27127   # Redwood MN
+    - 27145   # Stearns MN
+    - 31039   # Cuming NE
+    - 46027   # Clay SD
+    - 46099   # Minnehaha SD
+    - 46125   # Turner SD
+    - 46135   # Yankton SD
+    - 56015   # Goshen WY
+
+  # ── Corrected geographic ring perimeters (adjacency-based) ──
+  geo_ring2:  # panhandle + 2 geographic rings (47 dairy counties, 5 states)
+    # Panhandle (14)
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48179   # Gray TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48295   # Lipscomb TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+    # Ring 1 (+14): OK=6, TX=5, NM=3
+    - 35009   # Curry NM
+    - 35037   # Quay NM
+    - 35059   # Union NM
+    - 40007   # Beaver OK
+    - 40009   # Beckham OK
+    - 40025   # Cimarron OK
+    - 40045   # Ellis OK
+    - 40129   # Roger Mills OK
+    - 40139   # Texas OK
+    - 48017   # Bailey TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48279   # Lamb TX
+    - 48345   # Motley TX
+    # Ring 2 (+19): OK=7, NM=4, KS=4, CO=2, TX=2
+    - 8009    # Baca CO
+    - 8071    # Las Animas CO
+    - 20025   # Clark KS
+    - 20119   # Meade KS
+    - 20175   # Seward KS
+    - 20189   # Stevens KS
+    - 35007   # Colfax NM
+    - 35019   # Guadalupe NM
+    - 35041   # Roosevelt NM
+    - 35047   # San Miguel NM
+    - 40039   # Custer OK
+    - 40043   # Dewey OK
+    - 40057   # Harmon OK
+    - 40059   # Harper OK
+    - 40075   # Kiowa OK
+    - 40149   # Washita OK
+    - 40153   # Woodward OK
+    - 48197   # Hardeman TX
+    - 48303   # Lubbock TX
+
+  geo_ring4:  # panhandle + 4 geographic rings (111 dairy counties, 5 states)
+    # Panhandle (14)
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48179   # Gray TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48295   # Lipscomb TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+    # Ring 1 (+14)
+    - 35009   # Curry NM
+    - 35037   # Quay NM
+    - 35059   # Union NM
+    - 40007   # Beaver OK
+    - 40009   # Beckham OK
+    - 40025   # Cimarron OK
+    - 40045   # Ellis OK
+    - 40129   # Roger Mills OK
+    - 40139   # Texas OK
+    - 48017   # Bailey TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48279   # Lamb TX
+    - 48345   # Motley TX
+    # Ring 2 (+19)
+    - 8009    # Baca CO
+    - 8071    # Las Animas CO
+    - 20025   # Clark KS
+    - 20119   # Meade KS
+    - 20175   # Seward KS
+    - 20189   # Stevens KS
+    - 35007   # Colfax NM
+    - 35019   # Guadalupe NM
+    - 35041   # Roosevelt NM
+    - 35047   # San Miguel NM
+    - 40039   # Custer OK
+    - 40043   # Dewey OK
+    - 40057   # Harmon OK
+    - 40059   # Harper OK
+    - 40075   # Kiowa OK
+    - 40149   # Washita OK
+    - 40153   # Woodward OK
+    - 48197   # Hardeman TX
+    - 48303   # Lubbock TX
+    # Ring 3 (+27): CO=6, KS=6, NM=7, OK=6, TX=2
+    - 8011    # Bent CO
+    - 8023    # Costilla CO
+    - 8055    # Huerfano CO
+    - 8089    # Otero CO
+    - 8099    # Prowers CO
+    - 8101    # Pueblo CO
+    - 20057   # Ford KS
+    - 20067   # Grant KS
+    - 20069   # Gray KS
+    - 20081   # Haskell KS
+    - 20097   # Kiowa KS
+    - 20187   # Stanton KS
+    - 35005   # Chaves NM
+    - 35025   # Lea NM
+    - 35027   # Lincoln NM
+    - 35033   # Mora NM
+    - 35049   # Santa Fe NM
+    - 35055   # Taos NM
+    - 35057   # Torrance NM
+    - 40015   # Caddo OK
+    - 40031   # Comanche OK
+    - 40065   # Jackson OK
+    - 40093   # Major OK
+    - 40141   # Tillman OK
+    - 40151   # Woods OK
+    - 48305   # Lynn TX
+    - 48445   # Terry TX
+    # Ring 4 (+37): CO=8, KS=8, NM=8, OK=7, TX=6
+    - 8003    # Alamosa CO
+    - 8021    # Conejos CO
+    - 8025    # Crowley CO
+    - 8027    # Custer CO
+    - 8041    # El Paso CO
+    - 8043    # Fremont CO
+    - 8061    # Kiowa CO
+    - 8109    # Saguache CO
+    - 20007   # Barber KS
+    - 20047   # Edwards KS
+    - 20055   # Finney KS
+    - 20071   # Greeley KS
+    - 20075   # Hamilton KS
+    - 20083   # Hodgeman KS
+    - 20093   # Kearny KS
+    - 20151   # Pratt KS
+    - 35001   # Bernalillo NM
+    - 35015   # Eddy NM
+    - 35035   # Otero NM
+    - 35039   # Rio Arriba NM
+    - 35043   # Sandoval NM
+    - 35051   # Sierra NM
+    - 35053   # Socorro NM
+    - 35061   # Valencia NM
+    - 40003   # Alfalfa OK
+    - 40017   # Canadian OK
+    - 40033   # Cotton OK
+    - 40047   # Garfield OK
+    - 40051   # Grady OK
+    - 40073   # Kingfisher OK
+    - 40137   # Stephens OK
+    - 48009   # Archer TX
+    - 48151   # Fisher TX
+    - 48165   # Gaines TX
+    - 48253   # Jones TX
+    - 48415   # Scurry TX
+    - 48495   # Winkler TX
+
+  # ── Network-based perimeters (>=90% of 1000 networks) ──
+  net90_1hop:  # panhandle + 1-hop destinations at >=90% (66 dairy counties, 11 states)
+    # Panhandle (14)
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48179   # Gray TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48295   # Lipscomb TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+    # 1-hop (+52): TX=12, KS=10, NM=9, CO=7, CA=5, AZ=2, IA=2, OK=2, MN=1, FL=1, ID=1
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6031    # Kings CA
+    - 6047    # Merced CA
+    - 6071    # San Bernardino CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8121    # Washington CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 12067   # Lafayette FL
+    - 16047   # Gooding ID
+    - 19119   # Lyon IA
+    - 19167   # Sioux IA
+    - 20015   # Butler KS
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20067   # Grant KS
+    - 20069   # Gray KS
+    - 20075   # Hamilton KS
+    - 20081   # Haskell KS
+    - 20151   # Pratt KS
+    - 20171   # Scott KS
+    - 20187   # Stanton KS
+    - 27145   # Stearns MN
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35013   # Dona Ana NM
+    - 35015   # Eddy NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35057   # Torrance NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40025   # Cimarron OK
+    - 40139   # Texas OK
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48077   # Clay TX
+    - 48093   # Comanche TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48303   # Lubbock TX
+    - 48445   # Terry TX
+    - 48451   # Tom Green TX
+
+
+  # ── Network-based perimeters (>=95% of 1000 networks) ──
+  net95_1hop:  # panhandle + 1-hop destinations at >=95% (52 dairy counties, 8 states)
+    # Panhandle (14)
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48179   # Gray TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48295   # Lipscomb TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+    # 1-hop (+38): TX=10, NM=7, CO=6, KS=6, CA=5, AZ=2, OK=1, IA=1
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6031    # Kings CA
+    - 6047    # Merced CA
+    - 6071    # San Bernardino CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 19167   # Sioux IA
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 20075   # Hamilton KS
+    - 20081   # Haskell KS
+    - 20171   # Scott KS
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35013   # Dona Ana NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40139   # Texas OK
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48093   # Comanche TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48189   # Hale TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48303   # Lubbock TX
+    - 48445   # Terry TX
+
+
+  net99_1hop:  # panhandle + 1-hop destinations at >=99% (41 dairy counties, 8 states)
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6047    # Merced CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 19167   # Sioux IA
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 40139   # Texas OK
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+
+  net99_2hop:  # panhandle + 1-hop + 2-hop at >=99% (189 dairy counties, 20 states)
+    - 4003    # Cochise AZ
+    - 4013    # Maricopa AZ
+    - 4019    # Pima AZ
+    - 4021    # Pinal AZ
+    - 4025    # Yavapai AZ
+    - 4027    # Yuma AZ
+    - 6019    # Fresno CA
+    - 6021    # Glenn CA
+    - 6023    # Humboldt CA
+    - 6025    # Imperial CA
+    - 6029    # Kern CA
+    - 6031    # Kings CA
+    - 6039    # Madera CA
+    - 6041    # Marin CA
+    - 6047    # Merced CA
+    - 6065    # Riverside CA
+    - 6067    # Sacramento CA
+    - 6069    # San Benito CA
+    - 6071    # San Bernardino CA
+    - 6077    # San Joaquin CA
+    - 6079    # San Luis Obispo CA
+    - 6095    # Solano CA
+    - 6097    # Sonoma CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8001    # Adams CO
+    - 8005    # Arapahoe CO
+    - 8063    # Kit Carson CO
+    - 8069    # Larimer CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8093    # Park CO
+    - 8095    # Phillips CO
+    - 8099    # Prowers CO
+    - 8101    # Pueblo CO
+    - 8121    # Washington CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 12067   # Lafayette FL
+    - 12093   # Okeechobee FL
+    - 16027   # Canyon ID
+    - 16031   # Cassia ID
+    - 16041   # Franklin ID
+    - 16047   # Gooding ID
+    - 16053   # Jerome ID
+    - 16063   # Lincoln ID
+    - 16073   # Owyhee ID
+    - 16083   # Twin Falls ID
+    - 18039   # Elkhart IN
+    - 19021   # Buena Vista IA
+    - 19027   # Carroll IA
+    - 19029   # Cass IA
+    - 19035   # Cherokee IA
+    - 19047   # Crawford IA
+    - 19059   # Dickinson IA
+    - 19061   # Dubuque IA
+    - 19093   # Ida IA
+    - 19119   # Lyon IA
+    - 19131   # Mitchell IA
+    - 19141   # O'Brien IA
+    - 19143   # Osceola IA
+    - 19147   # Palo Alto IA
+    - 19149   # Plymouth IA
+    - 19155   # Pottawattamie IA
+    - 19161   # Sac IA
+    - 19167   # Sioux IA
+    - 19193   # Woodbury IA
+    - 20015   # Butler KS
+    - 20023   # Cheyenne KS
+    - 20025   # Clark KS
+    - 20039   # Decatur KS
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20067   # Grant KS
+    - 20069   # Gray KS
+    - 20075   # Hamilton KS
+    - 20081   # Haskell KS
+    - 20083   # Hodgeman KS
+    - 20093   # Kearny KS
+    - 20119   # Meade KS
+    - 20151   # Pratt KS
+    - 20171   # Scott KS
+    - 20175   # Seward KS
+    - 20187   # Stanton KS
+    - 20189   # Stevens KS
+    - 20193   # Thomas KS
+    - 20201   # Washington KS
+    - 26063   # Huron MI
+    - 27015   # Brown MN
+    - 27033   # Cottonwood MN
+    - 27045   # Fillmore MN
+    - 27049   # Goodhue MN
+    - 27063   # Jackson MN
+    - 27081   # Lincoln MN
+    - 27083   # Lyon MN
+    - 27091   # Martin MN
+    - 27097   # Morrison MN
+    - 27101   # Murray MN
+    - 27103   # Nicollet MN
+    - 27105   # Nobles MN
+    - 27111   # Otter Tail MN
+    - 27117   # Pipestone MN
+    - 27127   # Redwood MN
+    - 27129   # Renville MN
+    - 27133   # Rock MN
+    - 27143   # Sibley MN
+    - 27145   # Stearns MN
+    - 27157   # Wabasha MN
+    - 27169   # Winona MN
+    - 27173   # Yellow Medicine MN
+    - 31027   # Cedar NE
+    - 31039   # Cuming NE
+    - 32001   # Churchill NV
+    - 32019   # Lyon NV
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35013   # Dona Ana NM
+    - 35015   # Eddy NM
+    - 35025   # Lea NM
+    - 35029   # Luna NM
+    - 35041   # Roosevelt NM
+    - 35053   # Socorro NM
+    - 35057   # Torrance NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40007   # Beaver OK
+    - 40025   # Cimarron OK
+    - 40109   # Oklahoma OK
+    - 40139   # Texas OK
+    - 46009   # Bon Homme SD
+    - 46011   # Brookings SD
+    - 46023   # Charles Mix SD
+    - 46027   # Clay SD
+    - 46067   # Hutchinson SD
+    - 46083   # Lincoln SD
+    - 46099   # Minnehaha SD
+    - 46101   # Moody SD
+    - 46123   # Tripp SD
+    - 46125   # Turner SD
+    - 46127   # Union SD
+    - 46135   # Yankton SD
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48077   # Clay TX
+    - 48093   # Comanche TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48159   # Franklin TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48193   # Hamilton TX
+    - 48205   # Hartley TX
+    - 48223   # Hopkins TX
+    - 48251   # Johnson TX
+    - 48277   # Lamar TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48445   # Terry TX
+    - 48451   # Tom Green TX
+    - 48467   # Van Zandt TX
+    - 48483   # Wheeler TX
+    - 48499   # Wood TX
+    - 49003   # Box Elder UT
+    - 49005   # Cache UT
+    - 49027   # Millard UT
+    - 49041   # Sevier UT
+    - 53021   # Franklin WA
+    - 53025   # Grant WA
+    - 53073   # Whatcom WA
+    - 53077   # Yakima WA
+    - 55019   # Clark WI
+    - 55025   # Dane WI
+    - 55039   # Fond du Lac WI
+    - 55043   # Grant WI
+    - 55073   # Marathon WI
+    - 56015   # Goshen WY
+    - 56021   # Laramie WY
+
+  net100_1hop:  # panhandle + 1-hop destinations at 100% (29 dairy counties, 5 states)
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6107    # Tulare CA
+    - 8123    # Weld CO
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+
+  net100_2hop:  # panhandle + 1-hop + 2-hop at 100% (73 dairy counties, 12 states)
+    - 4003    # Cochise AZ
+    - 4013    # Maricopa AZ
+    - 4019    # Pima AZ
+    - 4021    # Pinal AZ
+    - 4027    # Yuma AZ
+    - 6019    # Fresno CA
+    - 6029    # Kern CA
+    - 6031    # Kings CA
+    - 6039    # Madera CA
+    - 6041    # Marin CA
+    - 6047    # Merced CA
+    - 6065    # Riverside CA
+    - 6067    # Sacramento CA
+    - 6071    # San Bernardino CA
+    - 6077    # San Joaquin CA
+    - 6097    # Sonoma CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8069    # Larimer CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8095    # Phillips CO
+    - 8121    # Washington CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 16031   # Cassia ID
+    - 16047   # Gooding ID
+    - 16053   # Jerome ID
+    - 16083   # Twin Falls ID
+    - 19167   # Sioux IA
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 20171   # Scott KS
+    - 27145   # Stearns MN
+    - 32001   # Churchill NV
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35013   # Dona Ana NM
+    - 35015   # Eddy NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40139   # Texas OK
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48093   # Comanche TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48445   # Terry TX
+    - 48483   # Wheeler TX
+    - 56015   # Goshen WY
+    - 56021   # Laramie WY
+
+  net95_2hop_cond:  # conditional 2-hop at >=95% (132 dairy counties, 16 states)
+    - 4013    # Maricopa AZ
+    - 4019    # Pima AZ
+    - 4021    # Pinal AZ
+    - 4027    # Yuma AZ
+    - 6019    # Fresno CA
+    - 6021    # Glenn CA
+    - 6023    # Humboldt CA
+    - 6025    # Imperial CA
+    - 6029    # Kern CA
+    - 6031    # Kings CA
+    - 6037    # Los Angeles CA
+    - 6039    # Madera CA
+    - 6041    # Marin CA
+    - 6047    # Merced CA
+    - 6065    # Riverside CA
+    - 6067    # Sacramento CA
+    - 6069    # San Benito CA
+    - 6071    # San Bernardino CA
+    - 6077    # San Joaquin CA
+    - 6079    # San Luis Obispo CA
+    - 6095    # Solano CA
+    - 6097    # Sonoma CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8005    # Arapahoe CO
+    - 8063    # Kit Carson CO
+    - 8069    # Larimer CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8095    # Phillips CO
+    - 8121    # Washington CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 16031   # Cassia ID
+    - 16047   # Gooding ID
+    - 16053   # Jerome ID
+    - 16083   # Twin Falls ID
+    - 19021   # Buena Vista IA
+    - 19027   # Carroll IA
+    - 19035   # Cherokee IA
+    - 19047   # Crawford IA
+    - 19059   # Dickinson IA
+    - 19093   # Ida IA
+    - 19109   # Kossuth IA
+    - 19119   # Lyon IA
+    - 19141   # O'Brien IA
+    - 19143   # Osceola IA
+    - 19147   # Palo Alto IA
+    - 19149   # Plymouth IA
+    - 19151   # Pocahontas IA
+    - 19155   # Pottawattamie IA
+    - 19161   # Sac IA
+    - 19167   # Sioux IA
+    - 19193   # Woodbury IA
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 20075   # Hamilton KS
+    - 20081   # Haskell KS
+    - 20171   # Scott KS
+    - 27015   # Brown MN
+    - 27033   # Cottonwood MN
+    - 27063   # Jackson MN
+    - 27081   # Lincoln MN
+    - 27083   # Lyon MN
+    - 27091   # Martin MN
+    - 27101   # Murray MN
+    - 27103   # Nicollet MN
+    - 27105   # Nobles MN
+    - 27117   # Pipestone MN
+    - 27127   # Redwood MN
+    - 27129   # Renville MN
+    - 27133   # Rock MN
+    - 27143   # Sibley MN
+    - 27145   # Stearns MN
+    - 27157   # Wabasha MN
+    - 27173   # Yellow Medicine MN
+    - 31027   # Cedar NE
+    - 31039   # Cuming NE
+    - 32001   # Churchill NV
+    - 32019   # Lyon NV
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35013   # Dona Ana NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 35061   # Valencia NM
+    - 40139   # Texas OK
+    - 46009   # Bon Homme SD
+    - 46011   # Brookings SD
+    - 46027   # Clay SD
+    - 46067   # Hutchinson SD
+    - 46083   # Lincoln SD
+    - 46099   # Minnehaha SD
+    - 46101   # Moody SD
+    - 46125   # Turner SD
+    - 46127   # Union SD
+    - 46135   # Yankton SD
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48093   # Comanche TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48193   # Hamilton TX
+    - 48205   # Hartley TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48445   # Terry TX
+    - 48483   # Wheeler TX
+    - 48499   # Wood TX
+    - 49005   # Cache UT
+    - 49027   # Millard UT
+    - 53073   # Whatcom WA
+    - 53077   # Yakima WA
+    - 56015   # Goshen WY
+    - 56021   # Laramie WY
+
+  net99_2hop_cond:  # conditional 2-hop at >=99% (102 dairy counties, 14 states)
+    - 4013    # Maricopa AZ
+    - 4021    # Pinal AZ
+    - 6019    # Fresno CA
+    - 6021    # Glenn CA
+    - 6025    # Imperial CA
+    - 6029    # Kern CA
+    - 6031    # Kings CA
+    - 6039    # Madera CA
+    - 6041    # Marin CA
+    - 6047    # Merced CA
+    - 6065    # Riverside CA
+    - 6067    # Sacramento CA
+    - 6069    # San Benito CA
+    - 6071    # San Bernardino CA
+    - 6077    # San Joaquin CA
+    - 6079    # San Luis Obispo CA
+    - 6097    # Sonoma CA
+    - 6099    # Stanislaus CA
+    - 6107    # Tulare CA
+    - 8063    # Kit Carson CO
+    - 8069    # Larimer CO
+    - 8075    # Logan CO
+    - 8087    # Morgan CO
+    - 8089    # Otero CO
+    - 8095    # Phillips CO
+    - 8121    # Washington CO
+    - 8123    # Weld CO
+    - 8125    # Yuma CO
+    - 16047   # Gooding ID
+    - 16053   # Jerome ID
+    - 16083   # Twin Falls ID
+    - 19021   # Buena Vista IA
+    - 19027   # Carroll IA
+    - 19035   # Cherokee IA
+    - 19047   # Crawford IA
+    - 19059   # Dickinson IA
+    - 19093   # Ida IA
+    - 19119   # Lyon IA
+    - 19141   # O'Brien IA
+    - 19143   # Osceola IA
+    - 19147   # Palo Alto IA
+    - 19149   # Plymouth IA
+    - 19161   # Sac IA
+    - 19167   # Sioux IA
+    - 19193   # Woodbury IA
+    - 20055   # Finney KS
+    - 20057   # Ford KS
+    - 20069   # Gray KS
+    - 27015   # Brown MN
+    - 27033   # Cottonwood MN
+    - 27063   # Jackson MN
+    - 27081   # Lincoln MN
+    - 27083   # Lyon MN
+    - 27091   # Martin MN
+    - 27101   # Murray MN
+    - 27105   # Nobles MN
+    - 27117   # Pipestone MN
+    - 27127   # Redwood MN
+    - 27133   # Rock MN
+    - 27145   # Stearns MN
+    - 31039   # Cuming NE
+    - 32001   # Churchill NV
+    - 35005   # Chaves NM
+    - 35009   # Curry NM
+    - 35025   # Lea NM
+    - 35041   # Roosevelt NM
+    - 35059   # Union NM
+    - 40139   # Texas OK
+    - 46009   # Bon Homme SD
+    - 46011   # Brookings SD
+    - 46027   # Clay SD
+    - 46083   # Lincoln SD
+    - 46099   # Minnehaha SD
+    - 46101   # Moody SD
+    - 46125   # Turner SD
+    - 46127   # Union SD
+    - 46135   # Yankton SD
+    - 48009   # Archer TX
+    - 48017   # Bailey TX
+    - 48065   # Carson TX
+    - 48069   # Castro TX
+    - 48093   # Comanche TX
+    - 48111   # Dallam TX
+    - 48117   # Deaf Smith TX
+    - 48129   # Donley TX
+    - 48143   # Erath TX
+    - 48153   # Floyd TX
+    - 48179   # Gray TX
+    - 48189   # Hale TX
+    - 48191   # Hall TX
+    - 48205   # Hartley TX
+    - 48223   # Hopkins TX
+    - 48279   # Lamb TX
+    - 48295   # Lipscomb TX
+    - 48303   # Lubbock TX
+    - 48341   # Moore TX
+    - 48369   # Parmer TX
+    - 48421   # Sherman TX
+    - 48437   # Swisher TX
+    - 48483   # Wheeler TX
+    - 56015   # Goshen WY
+    - 56021   # Laramie WY
+
+  # TX statewide: all 148 TX dairy counties (computed at runtime from county data)
+
+# ── Seed states for alternative origin analysis ──
+alternative_origins:
+  seed_states: [TX, CA, ID, IA, NM, KS, SD, CO, OH, NC, MI, MN, WY, OK, NE, UT]
+  connectivity_tiers: [high, low]
+  npi_conditions: [npi, no_npi]
+  n_sample_nets_for_pools: 20
+
+# ── All-county alternative origin analysis ──
+all_county_origins:
+  npi_conditions: [npi]
+  num_networks: 200
+
+# ═══════════════════════════════════════════════════════════════════════
+# Scenario definitions
+# ═══════════════════════════════════════════════════════════════════════
+# Each scenario has:
+#   npis: list of NPI layers, each with target, factor, delay
+#   description: human-readable
+#   seed_county: override (default: model.seed_county)
+#
+# NPI layer targets:
+#   interstate    — src and dest in different states
+#   intrastate    — src and dest in same state
+#   from_states   — src county in listed states
+#   from_counties — src county in listed FIPS set
+#   to_states     — dest county in listed states
+#   all           — every edge
+#
+# factor: float (0-1) or 'posterior' (use ABC posterior npi_factor)
+# delay: delay_post_tx (days after TX detection) or delay_post_tmrca (days after tMRCA)
+#
+# Layers stack multiplicatively: if two layers match an edge,
+# effective_factor = layer1.factor * layer2.factor
+
+scenarios:
+  # ── A. NPI timing counterfactuals ──
+  npi_timing:
+    npi_day0:
+      description: "Interstate NPI at TX detection"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 0}
+    npi_day4:
+      description: "Interstate NPI 4 days after TX detection"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 4}
+    npi_day8:
+      description: "Interstate NPI 8 days after TX detection"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 8}
+    npi_day16:
+      description: "Interstate NPI 16 days after TX detection"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 16}
+    npi_day35:
+      description: "Interstate NPI at actual federal order (day 35)"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 35}
+    no_npi:
+      description: "No NPI baseline"
+      npis: []
+
+  # ── B. NPI strength sweep (at actual timing, day 35) ──
+  strength_sweep:
+    strength_f010:
+      description: "90% interstate reduction at day 35"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tx: 35}
+    strength_f030:
+      description: "70% interstate reduction at day 35"
+      npis:
+        - {target: interstate, factor: 0.3, delay_post_tx: 35}
+    strength_f050:
+      description: "50% interstate reduction at day 35"
+      npis:
+        - {target: interstate, factor: 0.5, delay_post_tx: 35}
+    strength_f070:
+      description: "30% interstate reduction at day 35"
+      npis:
+        - {target: interstate, factor: 0.7, delay_post_tx: 35}
+    strength_f090:
+      description: "10% interstate reduction at day 35"
+      npis:
+        - {target: interstate, factor: 0.9, delay_post_tx: 35}
+
+  # ── C. Early + strong ──
+  early_strong:
+    day0_f010:
+      description: "90% interstate reduction at TX detection"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tx: 0}
+    day16_f010:
+      description: "90% interstate reduction at day 16"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tx: 16}
+
+  # ── D. Early surveillance (relative to tMRCA, not TX detection) ──
+  early_surveillance:
+    tmrca_30d:
+      description: "90% interstate reduction 30d after tMRCA"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tmrca: 30}
+    tmrca_7d:
+      description: "90% interstate reduction 7d after tMRCA"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tmrca: 7}
+    tmrca_14d:
+      description: "90% interstate reduction 14d after tMRCA"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tmrca: 14}
+    tmrca_60d:
+      description: "90% interstate reduction 60d after tMRCA"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tmrca: 60}
+
+  # ── E. Within-state interventions ──
+  within_state:
+    within50_between_posterior:
+      description: "50% intrastate + posterior interstate at day 35"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 35}
+        - {target: intrastate, factor: 0.5, delay_post_tx: 35}
+    within90_between_posterior:
+      description: "90% intrastate + posterior interstate at day 35"
+      npis:
+        - {target: interstate, factor: posterior, delay_post_tx: 35}
+        - {target: intrastate, factor: 0.1, delay_post_tx: 35}
+    within90_between90:
+      description: "90% intrastate + 90% interstate at day 35"
+      npis:
+        - {target: interstate, factor: 0.1, delay_post_tx: 35}
+        - {target: intrastate, factor: 0.1, delay_post_tx: 35}
+
+  # ── F. Alternative origins ──
+  # Generated programmatically from alternative_origins config above.
+  # 16 states × 2 tiers × 2 NPI = 64 scenarios.
+  # Each scenario seeds from a connectivity pool within the origin state.
+  # NPI condition 'npi' uses: [{target: interstate, factor: posterior, delay_post_tx: 35}]
+  # NPI condition 'no_npi' uses: []
+
+  # ── G. Targeted containment scenarios ──
+  # 7 perimeters × 4 timing points = 28 scenarios + 1 standard federal order = 29
+  # All use 90% reduction (factor: 0.1) on outbound edges from containment zone.
+
+  targeted_containment:
+    # ── Castro only ──
+    castro_tmrca14:
+      description: "90% outbound reduction from Castro at tMRCA+14d"
+      npis: [{target: from_counties, county_set: castro, factor: 0.1, delay_post_tmrca: 14}]
+    castro_tmrca30:
+      description: "90% outbound reduction from Castro at tMRCA+30d"
+      npis: [{target: from_counties, county_set: castro, factor: 0.1, delay_post_tmrca: 30}]
+    castro_tmrca60:
+      description: "90% outbound reduction from Castro at tMRCA+60d"
+      npis: [{target: from_counties, county_set: castro, factor: 0.1, delay_post_tmrca: 60}]
+    castro_detect:
+      description: "90% outbound reduction from Castro at TX detection"
+      npis: [{target: from_counties, county_set: castro, factor: 0.1, delay_post_tx: 0}]
+
+    # ── Panhandle (26 counties, 14 dairy) ──
+    panhandle_tmrca14:
+      description: "90% outbound reduction from panhandle at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.1, delay_post_tmrca: 14}]
+    panhandle_tmrca30:
+      description: "90% outbound reduction from panhandle at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.1, delay_post_tmrca: 30}]
+    panhandle_tmrca60:
+      description: "90% outbound reduction from panhandle at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.1, delay_post_tmrca: 60}]
+    panhandle_detect:
+      description: "90% outbound reduction from panhandle at TX detection"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.1, delay_post_tx: 0}]
+
+    # ── Panhandle 100% halt (14 dairy counties) ──
+    panhandle_halt_tmrca14:
+      description: "100% outbound halt from panhandle at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.0, delay_post_tmrca: 14}]
+    panhandle_halt_tmrca30:
+      description: "100% outbound halt from panhandle at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.0, delay_post_tmrca: 30}]
+    panhandle_halt_tmrca60:
+      description: "100% outbound halt from panhandle at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.0, delay_post_tmrca: 60}]
+    panhandle_halt_detect:
+      description: "100% outbound halt from panhandle at TX detection"
+      npis: [{target: from_counties, county_set: panhandle, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Panhandle + 1 geographic ring (42 counties, 5 states) ──
+    geo1_tmrca14:
+      description: "90% outbound reduction from panhandle+geo ring at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.1, delay_post_tmrca: 14}]
+    geo1_tmrca30:
+      description: "90% outbound reduction from panhandle+geo ring at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.1, delay_post_tmrca: 30}]
+    geo1_tmrca60:
+      description: "90% outbound reduction from panhandle+geo ring at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.1, delay_post_tmrca: 60}]
+    geo1_detect:
+      description: "90% outbound reduction from panhandle+geo ring at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.1, delay_post_tx: 0}]
+
+    # ── Panhandle + 2 geographic rings (81 counties, 5 states) ──
+    geo2_tmrca14:
+      description: "90% outbound reduction from panhandle+2 geo rings at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.1, delay_post_tmrca: 14}]
+    geo2_tmrca30:
+      description: "90% outbound reduction from panhandle+2 geo rings at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.1, delay_post_tmrca: 30}]
+    geo2_tmrca60:
+      description: "90% outbound reduction from panhandle+2 geo rings at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.1, delay_post_tmrca: 60}]
+    geo2_detect:
+      description: "90% outbound reduction from panhandle+2 geo rings at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.1, delay_post_tx: 0}]
+
+    # ── Panhandle + 1 network hop (39 counties, 8 states) ──
+    net1_tmrca14:
+      description: "90% outbound reduction from panhandle+network 1-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.1, delay_post_tmrca: 14}]
+    net1_tmrca30:
+      description: "90% outbound reduction from panhandle+network 1-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.1, delay_post_tmrca: 30}]
+    net1_tmrca60:
+      description: "90% outbound reduction from panhandle+network 1-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.1, delay_post_tmrca: 60}]
+    net1_detect:
+      description: "90% outbound reduction from panhandle+network 1-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.1, delay_post_tx: 0}]
+
+    # ── Panhandle + 2 network hops (58 counties, 10 states) ──
+    net2_tmrca14:
+      description: "90% outbound reduction from panhandle+network 2-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.1, delay_post_tmrca: 14}]
+    net2_tmrca30:
+      description: "90% outbound reduction from panhandle+network 2-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.1, delay_post_tmrca: 30}]
+    net2_tmrca60:
+      description: "90% outbound reduction from panhandle+network 2-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.1, delay_post_tmrca: 60}]
+    net2_detect:
+      description: "90% outbound reduction from panhandle+network 2-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.1, delay_post_tx: 0}]
+
+    # ── TX statewide ──
+    tx_state_tmrca14:
+      description: "90% outbound reduction from all TX at tMRCA+14d"
+      npis: [{target: from_states, states: [TX], factor: 0.1, delay_post_tmrca: 14}]
+    tx_state_tmrca30:
+      description: "90% outbound reduction from all TX at tMRCA+30d"
+      npis: [{target: from_states, states: [TX], factor: 0.1, delay_post_tmrca: 30}]
+    tx_state_tmrca60:
+      description: "90% outbound reduction from all TX at tMRCA+60d"
+      npis: [{target: from_states, states: [TX], factor: 0.1, delay_post_tmrca: 60}]
+    tx_state_detect:
+      description: "90% outbound reduction from all TX at TX detection"
+      npis: [{target: from_states, states: [TX], factor: 0.1, delay_post_tx: 0}]
+
+    # ── 100% halt for existing perimeters ──
+    geo1_halt_tmrca14:
+      description: "100% outbound halt from panhandle+geo ring at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.0, delay_post_tmrca: 14}]
+    geo1_halt_tmrca30:
+      description: "100% outbound halt from panhandle+geo ring at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.0, delay_post_tmrca: 30}]
+    geo1_halt_tmrca60:
+      description: "100% outbound halt from panhandle+geo ring at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.0, delay_post_tmrca: 60}]
+    geo1_halt_detect:
+      description: "100% outbound halt from panhandle+geo ring at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_geo1, factor: 0.0, delay_post_tx: 0}]
+
+    geo2_halt_tmrca14:
+      description: "100% outbound halt from panhandle+2 geo rings at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.0, delay_post_tmrca: 14}]
+    geo2_halt_tmrca30:
+      description: "100% outbound halt from panhandle+2 geo rings at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.0, delay_post_tmrca: 30}]
+    geo2_halt_tmrca60:
+      description: "100% outbound halt from panhandle+2 geo rings at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.0, delay_post_tmrca: 60}]
+    geo2_halt_detect:
+      description: "100% outbound halt from panhandle+2 geo rings at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_geo2, factor: 0.0, delay_post_tx: 0}]
+
+    net1_halt_tmrca14:
+      description: "100% outbound halt from panhandle+network 1-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.0, delay_post_tmrca: 14}]
+    net1_halt_tmrca30:
+      description: "100% outbound halt from panhandle+network 1-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.0, delay_post_tmrca: 30}]
+    net1_halt_tmrca60:
+      description: "100% outbound halt from panhandle+network 1-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.0, delay_post_tmrca: 60}]
+    net1_halt_detect:
+      description: "100% outbound halt from panhandle+network 1-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net1, factor: 0.0, delay_post_tx: 0}]
+
+    net2_halt_tmrca14:
+      description: "100% outbound halt from panhandle+network 2-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.0, delay_post_tmrca: 14}]
+    net2_halt_tmrca30:
+      description: "100% outbound halt from panhandle+network 2-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.0, delay_post_tmrca: 30}]
+    net2_halt_tmrca60:
+      description: "100% outbound halt from panhandle+network 2-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.0, delay_post_tmrca: 60}]
+    net2_halt_detect:
+      description: "100% outbound halt from panhandle+network 2-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net2, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Network 3-hop (88 counties, ~13 states) ──
+    net3_tmrca14:
+      description: "90% outbound reduction from panhandle+network 3-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.1, delay_post_tmrca: 14}]
+    net3_tmrca30:
+      description: "90% outbound reduction from panhandle+network 3-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.1, delay_post_tmrca: 30}]
+    net3_tmrca60:
+      description: "90% outbound reduction from panhandle+network 3-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.1, delay_post_tmrca: 60}]
+    net3_detect:
+      description: "90% outbound reduction from panhandle+network 3-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.1, delay_post_tx: 0}]
+    net3_halt_tmrca14:
+      description: "100% outbound halt from panhandle+network 3-hop at tMRCA+14d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.0, delay_post_tmrca: 14}]
+    net3_halt_tmrca30:
+      description: "100% outbound halt from panhandle+network 3-hop at tMRCA+30d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.0, delay_post_tmrca: 30}]
+    net3_halt_tmrca60:
+      description: "100% outbound halt from panhandle+network 3-hop at tMRCA+60d"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.0, delay_post_tmrca: 60}]
+    net3_halt_detect:
+      description: "100% outbound halt from panhandle+network 3-hop at TX detection"
+      npis: [{target: from_counties, county_set: panhandle_net3, factor: 0.0, delay_post_tx: 0}]
+
+    # ── TX + border states (297 dairy counties, 5 states) ──
+    tx_region_tmrca14:
+      description: "90% outbound reduction from TX+NM+OK+AR+LA at tMRCA+14d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.1, delay_post_tmrca: 14}]
+    tx_region_tmrca30:
+      description: "90% outbound reduction from TX+NM+OK+AR+LA at tMRCA+30d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.1, delay_post_tmrca: 30}]
+    tx_region_tmrca60:
+      description: "90% outbound reduction from TX+NM+OK+AR+LA at tMRCA+60d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.1, delay_post_tmrca: 60}]
+    tx_region_detect:
+      description: "90% outbound reduction from TX+NM+OK+AR+LA at TX detection"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.1, delay_post_tx: 0}]
+    tx_region_halt_tmrca14:
+      description: "100% outbound halt from TX+NM+OK+AR+LA at tMRCA+14d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.0, delay_post_tmrca: 14}]
+    tx_region_halt_tmrca30:
+      description: "100% outbound halt from TX+NM+OK+AR+LA at tMRCA+30d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.0, delay_post_tmrca: 30}]
+    tx_region_halt_tmrca60:
+      description: "100% outbound halt from TX+NM+OK+AR+LA at tMRCA+60d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.0, delay_post_tmrca: 60}]
+    tx_region_halt_detect:
+      description: "100% outbound halt from TX+NM+OK+AR+LA at TX detection"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA], factor: 0.0, delay_post_tx: 0}]
+
+    # ── Corrected geographic rings: 2 rings (47 counties) ──
+    geo_ring2_halt_tmrca14:
+      description: "100% outbound halt from geo ring 2 (47 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: geo_ring2, factor: 0.0, delay_post_tmrca: 14}]
+    geo_ring2_halt_tmrca30:
+      description: "100% outbound halt from geo ring 2 (47 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: geo_ring2, factor: 0.0, delay_post_tmrca: 30}]
+    geo_ring2_halt_tmrca60:
+      description: "100% outbound halt from geo ring 2 (47 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: geo_ring2, factor: 0.0, delay_post_tmrca: 60}]
+    geo_ring2_halt_detect:
+      description: "100% outbound halt from geo ring 2 (47 counties) at TX detection"
+      npis: [{target: from_counties, county_set: geo_ring2, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Corrected geographic rings: 4 rings (111 counties) ──
+    geo_ring4_halt_tmrca14:
+      description: "100% outbound halt from geo ring 4 (111 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: geo_ring4, factor: 0.0, delay_post_tmrca: 14}]
+    geo_ring4_halt_tmrca30:
+      description: "100% outbound halt from geo ring 4 (111 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: geo_ring4, factor: 0.0, delay_post_tmrca: 30}]
+    geo_ring4_halt_tmrca60:
+      description: "100% outbound halt from geo ring 4 (111 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: geo_ring4, factor: 0.0, delay_post_tmrca: 60}]
+    geo_ring4_halt_detect:
+      description: "100% outbound halt from geo ring 4 (111 counties) at TX detection"
+      npis: [{target: from_counties, county_set: geo_ring4, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Network 1-hop at >=90% (74 counties, 11 states) ──
+    net90_1hop_halt_tmrca14:
+      description: "100% outbound halt from net90 1-hop (74 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net90_1hop, factor: 0.0, delay_post_tmrca: 14}]
+    net90_1hop_halt_tmrca30:
+      description: "100% outbound halt from net90 1-hop (74 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net90_1hop, factor: 0.0, delay_post_tmrca: 30}]
+    net90_1hop_halt_tmrca60:
+      description: "100% outbound halt from net90 1-hop (74 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net90_1hop, factor: 0.0, delay_post_tmrca: 60}]
+    net90_1hop_halt_detect:
+      description: "100% outbound halt from net90 1-hop (74 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net90_1hop, factor: 0.0, delay_post_tx: 0}]
+
+
+    # ── Network 1-hop at >=95% (60 counties, 8 states) ──
+    net95_1hop_halt_tmrca14:
+      description: "100% outbound halt from net95 1-hop (60 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net95_1hop, factor: 0.0, delay_post_tmrca: 14}]
+    net95_1hop_halt_tmrca30:
+      description: "100% outbound halt from net95 1-hop (60 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net95_1hop, factor: 0.0, delay_post_tmrca: 30}]
+    net95_1hop_halt_tmrca60:
+      description: "100% outbound halt from net95 1-hop (60 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net95_1hop, factor: 0.0, delay_post_tmrca: 60}]
+    net95_1hop_halt_detect:
+      description: "100% outbound halt from net95 1-hop (60 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net95_1hop, factor: 0.0, delay_post_tx: 0}]
+
+
+    # ── Network 1-hop at >=99% (41 counties, 8 states) ──
+    net99_1hop_halt_tmrca14:
+      description: "100% outbound halt from net99 1-hop (41 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net99_1hop, factor: 0.0, delay_post_tmrca: 14}]
+    net99_1hop_halt_tmrca30:
+      description: "100% outbound halt from net99 1-hop (41 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net99_1hop, factor: 0.0, delay_post_tmrca: 30}]
+    net99_1hop_halt_tmrca60:
+      description: "100% outbound halt from net99 1-hop (41 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net99_1hop, factor: 0.0, delay_post_tmrca: 60}]
+    net99_1hop_halt_detect:
+      description: "100% outbound halt from net99 1-hop (41 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net99_1hop, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Network 1-hop + 2-hop at >=99% (189 counties, 20 states) ──
+    net99_2hop_halt_tmrca14:
+      description: "100% outbound halt from net99 2-hop (189 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net99_2hop, factor: 0.0, delay_post_tmrca: 14}]
+    net99_2hop_halt_tmrca30:
+      description: "100% outbound halt from net99 2-hop (189 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net99_2hop, factor: 0.0, delay_post_tmrca: 30}]
+    net99_2hop_halt_tmrca60:
+      description: "100% outbound halt from net99 2-hop (189 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net99_2hop, factor: 0.0, delay_post_tmrca: 60}]
+    net99_2hop_halt_detect:
+      description: "100% outbound halt from net99 2-hop (189 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net99_2hop, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Network 1-hop at 100% (29 counties, 5 states) ──
+    net100_1hop_halt_tmrca14:
+      description: "100% outbound halt from net100 1-hop (29 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net100_1hop, factor: 0.0, delay_post_tmrca: 14}]
+    net100_1hop_halt_tmrca30:
+      description: "100% outbound halt from net100 1-hop (29 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net100_1hop, factor: 0.0, delay_post_tmrca: 30}]
+    net100_1hop_halt_tmrca60:
+      description: "100% outbound halt from net100 1-hop (29 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net100_1hop, factor: 0.0, delay_post_tmrca: 60}]
+    net100_1hop_halt_detect:
+      description: "100% outbound halt from net100 1-hop (29 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net100_1hop, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Network 1-hop + 2-hop at 100% (73 counties, 12 states) ──
+    net100_2hop_halt_tmrca14:
+      description: "100% outbound halt from net100 2-hop (73 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net100_2hop, factor: 0.0, delay_post_tmrca: 14}]
+    net100_2hop_halt_tmrca30:
+      description: "100% outbound halt from net100 2-hop (73 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net100_2hop, factor: 0.0, delay_post_tmrca: 30}]
+    net100_2hop_halt_tmrca60:
+      description: "100% outbound halt from net100 2-hop (73 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net100_2hop, factor: 0.0, delay_post_tmrca: 60}]
+    net100_2hop_halt_detect:
+      description: "100% outbound halt from net100 2-hop (73 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net100_2hop, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Conditional 2-hop at >=95% (132 counties, 16 states) ──
+    net95_2hop_cond_halt_tmrca14:
+      description: "100% outbound halt from net95 conditional 2-hop (132 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net95_2hop_cond, factor: 0.0, delay_post_tmrca: 14}]
+    net95_2hop_cond_halt_tmrca30:
+      description: "100% outbound halt from net95 conditional 2-hop (132 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net95_2hop_cond, factor: 0.0, delay_post_tmrca: 30}]
+    net95_2hop_cond_halt_tmrca60:
+      description: "100% outbound halt from net95 conditional 2-hop (132 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net95_2hop_cond, factor: 0.0, delay_post_tmrca: 60}]
+    net95_2hop_cond_halt_detect:
+      description: "100% outbound halt from net95 conditional 2-hop (132 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net95_2hop_cond, factor: 0.0, delay_post_tx: 0}]
+
+    # ── Conditional 2-hop at >=99% (102 counties, 14 states) ──
+    net99_2hop_cond_halt_tmrca14:
+      description: "100% outbound halt from net99 conditional 2-hop (102 counties) at tMRCA+14d"
+      npis: [{target: from_counties, county_set: net99_2hop_cond, factor: 0.0, delay_post_tmrca: 14}]
+    net99_2hop_cond_halt_tmrca30:
+      description: "100% outbound halt from net99 conditional 2-hop (102 counties) at tMRCA+30d"
+      npis: [{target: from_counties, county_set: net99_2hop_cond, factor: 0.0, delay_post_tmrca: 30}]
+    net99_2hop_cond_halt_tmrca60:
+      description: "100% outbound halt from net99 conditional 2-hop (102 counties) at tMRCA+60d"
+      npis: [{target: from_counties, county_set: net99_2hop_cond, factor: 0.0, delay_post_tmrca: 60}]
+    net99_2hop_cond_halt_detect:
+      description: "100% outbound halt from net99 conditional 2-hop (102 counties) at TX detection"
+      npis: [{target: from_counties, county_set: net99_2hop_cond, factor: 0.0, delay_post_tx: 0}]
+
+    # ── TX + border states + KS + CO (437 dairy counties, 7 states) ──
+    tx_region7_halt_tmrca14:
+      description: "100% outbound halt from TX+NM+OK+AR+LA+KS+CO at tMRCA+14d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA, KS, CO], factor: 0.0, delay_post_tmrca: 14}]
+    tx_region7_halt_tmrca30:
+      description: "100% outbound halt from TX+NM+OK+AR+LA+KS+CO at tMRCA+30d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA, KS, CO], factor: 0.0, delay_post_tmrca: 30}]
+    tx_region7_halt_tmrca60:
+      description: "100% outbound halt from TX+NM+OK+AR+LA+KS+CO at tMRCA+60d"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA, KS, CO], factor: 0.0, delay_post_tmrca: 60}]
+    tx_region7_halt_detect:
+      description: "100% outbound halt from TX+NM+OK+AR+LA+KS+CO at TX detection"
+      npis: [{target: from_states, states: [TX, NM, OK, AR, LA, KS, CO], factor: 0.0, delay_post_tx: 0}]
+
+    # ── Standard federal order (interstate only, for comparison) ──
+    federal_order_standard:
+      description: "90% interstate reduction at day 35 (standardized federal order)"
+      npis: [{target: interstate, factor: 0.1, delay_post_tx: 35}]
