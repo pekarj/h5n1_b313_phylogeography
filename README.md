@@ -15,10 +15,11 @@ BEAST X input files and summary trees for all phylogenetic and phylogeographic a
   - `timeinhomogeneous_correlateSet2_weeklyEpochs_3era_3rateScalar` — Three-era parameterization with BSSVS per era
   - `timeinhomogeneous_correlateSet2enforced_weeklyEpochs_3era_3rateScalar` — Three-era parameterization with inclusion probabilities fixed at 1.0 (primary analysis)
 - **`host/`** — Host transition analyses (FIT) with downsampling sensitivity:
-  - `host_only_corrected_1358taxa` — Full dataset (1,358 tips)
+  - `host_only_1358` — Full dataset (1,358 tips)
   - `host_only_1358_downsample_551c` — Downsampled to ~50% of cattle sequences
   - `host_only_1358_downsample_275c` — Downsampled to ~25% of cattle sequences
   - `host_only_1358_downsample_137c` — Downsampled to ~12.5% of cattle sequences
+  - `host_only_1358*geographyFIT.empirical` — Location phylogeography analysis using the empirical trees from `host_only_1358`
 - **`county/`** — County-level phylogeographic analysis 
 
 ### `notebooks/`
