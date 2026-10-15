@@ -2,6 +2,80 @@
 
 Code and analysis files accompanying the manuscript *Dairy cattle movement networks govern the spread and persistence of H5N1 B3.13 in the United States*.
 
+## System requirements
+
+### Software dependencies
+
+- Python 3.13 (conda environment specified in `environment.yml`)
+- BEAST X v10.5.0 with BEAGLE library
+- Key Python packages: numpy, scipy, pandas, matplotlib, geopandas, baltic, dendropy, networkx, statsmodels, scikit-learn (full list in `environment.yml`)
+
+### Operating systems
+
+Tested on macOS 15 (Tahoe) and Ubuntu 22.04 LTS. Expected to work on any system with conda support.
+
+### Hardware
+
+No non-standard hardware required. BEAST analyses benefit from GPU acceleration via BEAGLE but can run on CPU. Simulation analyses were run on a multi-core server but can run on a standard desktop with longer runtimes.
+
+## Installation
+
+```bash
+conda env create -f environment.yml
+conda activate h5n1_phylogeography
+```
+
+Typical install time: 10–15 minutes on a standard desktop with broadband internet.
+
+## Demo
+
+### Simulations
+
+To run a minimal demonstration of the simulation pipeline:
+
+```bash
+cd simulations
+python run_simulations.py --config config.yaml --abc_results results/abc_accepted.csv --scenarios npi_day35 --num_networks 5 --num_sims 1 --seed 42
+```
+
+This runs the federal order baseline scenario with 5 networks (instead of 1,000) and 1 simulation per network per parameter set. Expected runtime: a few minutes on a standard desktop. Output: scenario summary statistics and per-simulation results in `outputs/scenarios/`.
+
+To aggregate results:
+
+```bash
+python aggregate.py --input_dir outputs/scenarios --scenarios npi_day35
+```
+
+### Notebooks
+
+Notebooks can be run in order (`fig1` through `fig5`, then `sup_*`). Each notebook expects pre-computed BEAST outputs (summary trees and log files) and simulation results. Pre-computed BEAST summary trees are provided in `beast/`.
+
+### BEAST
+
+BEAST XMLs require genome sequences to be inserted (accession numbers are listed as comments in each XML). Run with:
+
+```bash
+beast -beagle_GPU <xml_file>
+```
+
+Typical runtime: days to weeks depending on dataset size and hardware.
+
+## Instructions for use
+
+### Reproducing simulation analyses
+
+1. Obtain USAMMv3 dairy cattle movement networks (Sellman et al.)
+2. Place network files in `simulations/data/networks/`
+3. Run ABC calibration: `python abc_calibration.py --config config.yaml`
+4. Run all scenarios: `python run_simulations.py --config config.yaml`
+5. Aggregate results: `python aggregate.py --input_dir outputs/scenarios`
+
+Full reproduction with 1,000 networks and all scenarios requires a multi-core server and approximately 1–2 weeks of compute time depending on available resources.
+
+### Reproducing figures
+
+Run notebooks in `notebooks/` using the conda environment. Notebooks read BEAST summary trees from `beast/` and simulation results from `simulations/results/`.
+
 ## Repository structure
 
 ### `beast/`
@@ -64,9 +138,13 @@ County-level SIR epidemic simulation code calibrated via ABC-SMC.
 - `computed_network_perimeters.json` — Precomputed network-based containment perimeters
 - `results/abc_accepted.csv` — 75 ABC-SMC accepted parameter sets used for downstream simulations
 
-Simulation results (375,000 simulations per scenario) can be regenerated using the code and config provided. USAMMv3 dairy cattle movement networks are available from the original mansucript.
+Simulation results (375,000 simulations per scenario) can be regenerated using the code and config provided. USAMMv3 dairy cattle movement networks are available from the original manuscript.
 
 ## Software
 
 - [BEAST X v10.5.0](https://beast.community/)
 - Python environment specified in `environment.yml`
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
