@@ -55,7 +55,7 @@ Notebooks can be run in order (`fig1` through `fig5`, then `sup_*`). Each notebo
 BEAST XMLs require genome sequences to be inserted (accession numbers are listed as comments in each XML). Run with:
 
 ```bash
-beast -beagle_GPU <xml_file>
+beast -beagle_auto <xml_file>
 ```
 
 Typical runtime: days to weeks depending on dataset size and hardware.
